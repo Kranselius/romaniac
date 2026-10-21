@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2f56b0">
+  <meta name="description" content="A cheerful, no-pressure way to learn Romanian.">
+  <title>Romaniac</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preload" href="fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="back" class="icon-btn hidden" type="button" aria-label="Back">‹</button>
+    <a href="#/" class="brand"><span class="flag"><i></i><i></i><i></i></span>Romaniac</a>
+    <div class="top-right">
+      <span id="points-chip" class="points-chip" title="Points today"><b>0</b> pts</span>
+      <a href="#/progress" class="icon-btn" aria-label="Progress">🏅</a>
+      <a href="#/settings" class="icon-btn" aria-label="Settings">⚙️</a>
+    </div>
+  </header>
+  <main id="app"><div class="loading">Se încarcă…</div></main>
+  <div id="toasts" aria-live="polite"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
