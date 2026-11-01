@@ -496,6 +496,222 @@
      ]
     }
    ]
+  },
+  {
+   "id": "ilr-03",
+   "number": 3,
+   "title": "A fi, a avea, a face",
+   "topic": "a fi, a avea, a face; weather; nationalities and languages",
+   "cards": [
+    { "ref": "greet.ma-numesc" }, { "ref": "ilr-01.de-unde-esti" }, { "ref": "ilr-01.cati-ani-ai" },
+    { "ref": "ilr-01.trebuie-sa-plec" }, { "ref": "greet.pa" },
+    { "id": "ilr-03.numele-meu-este", "type": "phrase", "ro": ["Numele meu este …", "mă numesc"], "en": ["my name is …", "my name is"] },
+    { "id": "ilr-03.incantat-de-cunostinta", "type": "phrase", "ro": ["Încântat de cunoștință.", "încântată de cunoștință"], "en": ["nice to meet you", "pleased to meet you"] },
+    { "id": "ilr-03.de-asemenea", "type": "phrase", "ro": ["De asemenea!"], "en": ["likewise", "you too", "me too"] },
+    { "id": "ilr-03.ce-faci-aici", "type": "phrase", "ro": ["Ce faci aici?"], "en": ["what are you doing here?", "what are you doing here"] },
+    { "id": "ilr-03.dar-tu", "type": "phrase", "ro": ["Dar tu?"], "en": ["what about you?", "and you?", "what about you", "and you"] },
+    { "id": "ilr-03.unde-locuiesti", "type": "phrase", "ro": ["Unde locuiești?"], "en": ["where do you live?", "where do you live"] },
+    { "id": "ilr-03.interesant", "type": "other", "ro": ["Interesant!"], "en": ["interesting"] },
+    { "id": "ilr-03.mi-a-facut-placere", "type": "phrase", "ro": ["Mi-a făcut plăcere să te cunosc."], "en": ["it was nice meeting you", "nice meeting you", "it was nice to meet you"] },
+    { "id": "ilr-03.pe-curand", "type": "phrase", "ro": ["Pe curând!"], "en": ["see you soon"] },
+
+    { "id": "ilr-03.face-mancare", "type": "verb", "verb": "a-face", "ro": ["a face mâncare"], "en": ["to cook"] },
+    { "id": "ilr-03.face-dus", "type": "verb", "verb": "a-face", "ro": ["a face duș"], "en": ["to shower", "to take a shower", "to have a shower"] },
+    { "id": "ilr-03.face-baie", "type": "verb", "verb": "a-face", "ro": ["a face baie"], "en": ["to have a bath", "to take a bath", "to bathe"] },
+    { "id": "ilr-03.face-sport", "type": "verb", "verb": "a-face", "ro": ["a face sport"], "en": ["to exercise", "to work out", "to do sport"] },
+    { "id": "ilr-03.face-curat", "type": "verb", "verb": "a-face", "ro": ["a face curat"], "en": ["to clean", "to clean up", "to tidy up"] },
+    { "id": "ilr-03.face-mizerie", "type": "verb", "verb": "a-face", "ro": ["a face mizerie"], "en": ["to make a mess"] },
+    { "id": "ilr-03.face-planuri", "type": "verb", "verb": "a-face", "ro": ["a face planuri"], "en": ["to make plans", "to plan"] },
+
+    { "id": "ilr-03.vreme", "type": "noun", "ro": ["vreme"], "en": ["weather"], "gender": "f", "plural": "vremuri", "def": "vremea" },
+    { "id": "ilr-03.soare", "type": "noun", "ro": ["soare"], "en": ["sun"], "gender": "m", "plural": "sori", "def": "soarele" },
+    { "id": "ilr-03.nor", "type": "noun", "ro": ["nor"], "en": ["cloud"], "gender": "m", "plural": "nori", "def": "norul" },
+    { "id": "ilr-03.vant", "type": "noun", "ro": ["vânt"], "en": ["wind"], "gender": "n", "plural": "vânturi", "def": "vântul" },
+    { "id": "ilr-03.ploaie", "type": "noun", "ro": ["ploaie"], "en": ["rain"], "gender": "f", "plural": "ploi", "def": "ploaia" },
+    { "id": "ilr-03.zapada", "type": "noun", "ro": ["zăpadă"], "en": ["snow"], "gender": "f", "plural": "zăpezi", "def": "zăpada" },
+    { "id": "ilr-03.insorit", "type": "adjective", "ro": ["însorit", "însorită"], "en": ["sunny"], "forms": ["însorit", "însorită", "însoriți", "însorite"] },
+    { "id": "ilr-03.innorat", "type": "adjective", "ro": ["înnorat", "înnorată"], "en": ["cloudy"], "forms": ["înnorat", "înnorată", "înnorați", "înnorate"] },
+    { "id": "ilr-03.ploua", "type": "other", "ro": ["Plouă."], "en": ["it's raining", "it is raining", "it rains"] },
+    { "id": "ilr-03.ninge", "type": "other", "ro": ["Ninge."], "en": ["it's snowing", "it is snowing", "it snows"] },
+    { "id": "ilr-03.bate-vantul", "type": "phrase", "ro": ["Bate vântul."], "en": ["the wind is blowing", "it's windy", "it is windy"] },
+    { "id": "ilr-03.perioada", "type": "noun", "ro": ["perioadă"], "en": ["period, time", "period", "time"], "gender": "f", "plural": "perioade", "def": "perioada" },
+    { "ref": "ilr-01.anotimp" },
+
+    { "id": "ilr-03.tara", "type": "noun", "ro": ["țară"], "en": ["country"], "gender": "f", "plural": "țări", "def": "țara" },
+    { "id": "ilr-03.limba", "type": "noun", "ro": ["limbă"], "en": ["language, tongue", "language", "tongue"], "gender": "f", "plural": "limbi", "def": "limba" },
+    { "id": "ilr-03.romania", "type": "other", "ro": ["România"], "en": ["Romania"] },
+    { "id": "ilr-03.suedia", "type": "other", "ro": ["Suedia"], "en": ["Sweden"] },
+    { "id": "ilr-03.limba-romana", "type": "phrase", "ro": ["limba română", "româna"], "en": ["Romanian (language)", "the Romanian language", "Romanian"] },
+    { "id": "ilr-03.limba-suedeza", "type": "phrase", "ro": ["limba suedeză", "suedeza"], "en": ["Swedish (language)", "the Swedish language", "Swedish"] },
+    { "id": "ilr-03.roman", "type": "noun", "ro": ["român"], "en": ["Romanian (man)", "Romanian"], "gender": "m", "plural": "români", "def": "românul" },
+    { "id": "ilr-03.romanca", "type": "noun", "ro": ["româncă"], "en": ["Romanian (woman)", "Romanian woman"], "gender": "f", "plural": "românce", "def": "românca" },
+    { "id": "ilr-03.romanesc", "type": "adjective", "ro": ["românesc", "românească"], "en": ["Romanian (of things)", "Romanian"], "forms": ["românesc", "românească", "românești", "românești"] },
+    { "id": "ilr-03.suedez", "type": "noun", "ro": ["suedez"], "en": ["Swede (man)", "Swede"], "gender": "m", "plural": "suedezi", "def": "suedezul" },
+    { "id": "ilr-03.suedeza", "type": "noun", "ro": ["suedeză"], "en": ["Swede (woman)", "Swedish woman"], "gender": "f", "plural": "suedeze", "def": "suedeza" },
+    { "id": "ilr-03.brazilian", "type": "noun", "ro": ["brazilian"], "en": ["Brazilian (man)", "Brazilian"], "gender": "m", "plural": "brazilieni", "def": "brazilianul" },
+    { "id": "ilr-03.englezoaica", "type": "noun", "ro": ["englezoaică"], "en": ["Englishwoman", "English woman"], "gender": "f", "plural": "englezoaice", "def": "englezoaica" },
+    { "ref": "ilr-01.roman" }, { "ref": "ilr-01.suedez" },
+
+    { "ref": "time.marti" }, { "ref": "ilr-02.copac" }, { "ref": "fam.prietena" }, { "ref": "ilr-02.perete" },
+    { "ref": "food.masa" }, { "ref": "ilr-01.scaun" }, { "ref": "food.apa" }, { "ref": "food.cartof" },
+    { "ref": "ilr-01.fereastra" }, { "ref": "ilr-01.carte" }, { "ref": "ilr-02.caiet" }, { "ref": "ilr-01.culoare" },
+    { "ref": "ilr-02.creion" }, { "ref": "ilr-01.autobuz" }, { "ref": "time.luna" }, { "ref": "ilr-01.ianuarie" },
+    { "ref": "food.restaurant" }, { "ref": "ilr-02.unt" }, { "ref": "ilr-01.balcon" },
+    { "id": "ilr-03.castor", "type": "noun", "ro": ["castor"], "en": ["beaver"], "gender": "m", "plural": "castori", "def": "castorul" },
+    { "id": "ilr-03.ghiveci", "type": "noun", "ro": ["ghiveci"], "en": ["flowerpot", "plant pot"], "gender": "n", "plural": "ghivece", "def": "ghiveciul" },
+    { "id": "ilr-03.pat", "type": "noun", "ro": ["pat"], "en": ["bed"], "gender": "n", "plural": "paturi", "def": "patul" },
+    { "id": "ilr-03.trandafir", "type": "noun", "ro": ["trandafir"], "en": ["rose"], "gender": "m", "plural": "trandafiri", "def": "trandafirul" },
+    { "id": "ilr-03.lalea", "type": "noun", "ro": ["lalea"], "en": ["tulip"], "gender": "f", "plural": "lalele", "def": "laleaua" },
+    { "id": "ilr-03.link", "type": "noun", "ro": ["link"], "en": ["link"], "gender": "n", "plural": "linkuri", "def": "linkul" },
+    { "id": "ilr-03.alergare", "type": "noun", "ro": ["alergare"], "en": ["running", "run"], "gender": "f", "plural": "alergări", "def": "alergarea" },
+    { "id": "ilr-03.mancare", "type": "noun", "ro": ["mâncare"], "en": ["food, dish", "food", "dish", "meal"], "gender": "f", "plural": "mâncăruri", "def": "mâncarea" },
+    { "id": "ilr-03.pictura", "type": "noun", "ro": ["pictură"], "en": ["painting"], "gender": "f", "plural": "picturi", "def": "pictura" },
+    { "id": "ilr-03.pictor", "type": "noun", "ro": ["pictor"], "en": ["painter"], "gender": "m", "plural": "pictori", "def": "pictorul" },
+    { "id": "ilr-03.munte", "type": "noun", "ro": ["munte"], "en": ["mountain"], "gender": "m", "plural": "munți", "def": "muntele" },
+    { "id": "ilr-03.brad", "type": "noun", "ro": ["brad"], "en": ["fir tree", "fir", "Christmas tree"], "gender": "m", "plural": "brazi", "def": "bradul" },
+    { "id": "ilr-03.foaie", "type": "noun", "ro": ["foaie"], "en": ["sheet (of paper)", "sheet"], "gender": "f", "plural": "foi", "def": "foaia" },
+    { "id": "ilr-03.cal", "type": "noun", "ro": ["cal"], "en": ["horse"], "gender": "m", "plural": "cai", "def": "calul" },
+    { "id": "ilr-03.iepure", "type": "noun", "ro": ["iepure"], "en": ["rabbit", "hare"], "gender": "m", "plural": "iepuri", "def": "iepurele" },
+    { "id": "ilr-03.weekend", "type": "noun", "ro": ["weekend"], "en": ["weekend"], "gender": "n", "plural": "weekenduri", "def": "weekendul" },
+    { "id": "ilr-03.manager", "type": "noun", "ro": ["manager"], "en": ["manager"], "gender": "m", "plural": "manageri", "def": "managerul" },
+    { "id": "ilr-03.chelnerita", "type": "noun", "ro": ["chelneriță"], "en": ["waitress"], "gender": "f", "plural": "chelnerițe", "def": "chelnerița" },
+    { "id": "ilr-03.secretara", "type": "noun", "ro": ["secretară"], "en": ["secretary (female)", "secretary"], "gender": "f", "plural": "secretare", "def": "secretara" },
+    { "id": "ilr-03.istorie", "type": "noun", "ro": ["istorie"], "en": ["history"], "gender": "f", "plural": "istorii", "def": "istoria" },
+    { "id": "ilr-03.baterie", "type": "noun", "ro": ["baterie"], "en": ["battery"], "gender": "f", "plural": "baterii", "def": "bateria" },
+    { "id": "ilr-03.cires", "type": "noun", "ro": ["cireș"], "en": ["cherry tree"], "gender": "m", "plural": "cireși", "def": "cireșul" }
+   ],
+   "verbs": ["a-fi", "a-avea", "a-face"],
+   "grammar": [
+    {
+     "id": "ilr-03.g.aux",
+     "title": "a fi, a avea, a face (present)",
+     "rule": "a fi (to be): sunt, ești, este / e, suntem, sunteți, sunt. a avea (to have): am, ai, are, avem, aveți, au. a face (to do, to make): fac, faci, face, facem, faceți, fac. Age uses a avea (Are treizeci de ani); jobs and origin use a fi (Este profesoară. Sunt din Suedia.).",
+     "examples": [
+      { "ro": "Ea este profesoară și are doi copii.", "en": "She is a teacher and has two children." },
+      { "ro": "Ce faci? Fac mâncare.", "en": "What are you doing? I'm cooking." }
+     ],
+     "items": [
+      { "id": "ilr-03.g.aux.1", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Tu ___ un câine? (a avea)", "answer": ["ai"] },
+      { "id": "ilr-03.g.aux.2", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Ea ___ profesoară. (a fi)", "answer": ["este", "e"] },
+      { "id": "ilr-03.g.aux.3", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Noi ___ mâncare acum. (a face)", "answer": ["facem"] },
+      { "id": "ilr-03.g.aux.4", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Voi ___ din Suedia? (a fi)", "answer": ["sunteți"] },
+      { "id": "ilr-03.g.aux.5", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Ei ___ un apartament mic. (a avea)", "answer": ["au"] },
+      { "id": "ilr-03.g.aux.6", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Eu ___ sport sâmbăta. (a face)", "answer": ["fac"] },
+      { "id": "ilr-03.g.aux.7", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Dumneavoastră ___ doamna Ionescu? (a fi)", "answer": ["sunteți"] },
+      { "id": "ilr-03.g.aux.8", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Ce ___ tu în weekend? (a face)", "answer": ["faci"] },
+      { "id": "ilr-03.g.aux.9", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Ele nu ___ mașină. (a avea)", "answer": ["au"] },
+      { "id": "ilr-03.g.aux.10", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Voi ___ curat azi? (a face)", "answer": ["faceți"] },
+      { "id": "ilr-03.g.aux.11", "kind": "choice", "instruction": "Which verb fits?", "prompt": "Bunica ___ optzeci de ani.", "options": ["are", "este", "face"], "answer": ["are"] },
+      { "id": "ilr-03.g.aux.12", "kind": "choice", "instruction": "Which verb fits?", "prompt": "El ___ pictor.", "options": ["este", "are", "face"], "answer": ["este"] },
+      { "id": "ilr-03.g.aux.13", "kind": "choice", "instruction": "Which verb fits?", "prompt": "Noi ___ planuri pentru vară.", "options": ["facem", "suntem", "fac"], "answer": ["facem"] },
+      { "id": "ilr-03.g.aux.14", "kind": "order", "instruction": "Build the sentence.", "prompt": "I am a student and I have a cat.", "answer": ["Sunt student și am o pisică."] }
+     ]
+    },
+    {
+     "id": "ilr-03.g.end",
+     "title": "Verb endings: tu, noi, voi",
+     "rule": "In the present tense, the tu form ends in -i (ești, ai, faci), the noi form in -m (suntem, avem, facem) and the voi / dumneavoastră form in -ți (sunteți, aveți, faceți). The eu and ei / ele forms are often the same (eu fac – ei fac), but not always (eu am – ei au).",
+     "examples": [
+      { "ro": "tu lucrezi, noi lucrăm, voi lucrați", "en": "you work, we work, you (pl.) work" }
+     ],
+     "items": [
+      { "id": "ilr-03.g.end.1", "kind": "type", "instruction": "Write the right form.", "prompt": "noi ___ (a lucra)", "answer": ["lucrăm"] },
+      { "id": "ilr-03.g.end.2", "kind": "type", "instruction": "Write the right form.", "prompt": "voi ___ (a merge)", "answer": ["mergeți"] },
+      { "id": "ilr-03.g.end.3", "kind": "type", "instruction": "Write the right form.", "prompt": "tu ___ (a citi)", "answer": ["citești"] },
+      { "id": "ilr-03.g.end.4", "kind": "type", "instruction": "Write the right form.", "prompt": "noi ___ (a mânca)", "answer": ["mâncăm"] },
+      { "id": "ilr-03.g.end.5", "kind": "type", "instruction": "Write the right form.", "prompt": "tu ___ (a bea)", "answer": ["bei"] },
+      { "id": "ilr-03.g.end.6", "kind": "type", "instruction": "Write the right form.", "prompt": "voi ___ (a avea)", "answer": ["aveți"] },
+      { "id": "ilr-03.g.end.7", "kind": "type", "instruction": "Write the right form.", "prompt": "tu ___ (a vrea)", "answer": ["vrei"] },
+      { "id": "ilr-03.g.end.8", "say": "noi dormim", "kind": "choice", "instruction": "Which one is the noi form?", "prompt": "a dormi", "options": ["dormim", "dormiți", "dormi"], "answer": ["dormim"] }
+     ]
+    },
+    {
+     "id": "ilr-03.g.face",
+     "title": "Expressions with a face",
+     "rule": "A face (to do, to make) forms many everyday expressions: a face mâncare (to cook), a face duș (to shower), a face baie (to have a bath), a face sport (to exercise), a face curat (to clean), a face mizerie (to make a mess), a face planuri (to make plans), and a face + something you build or put together (a face o casă).",
+     "examples": [
+      { "ro": "Seara fac duș.", "en": "In the evening I shower." },
+      { "ro": "Copiii fac mizerie, apoi fac curat.", "en": "The children make a mess, then they clean up." }
+     ],
+     "items": [
+      { "id": "ilr-03.g.face.1", "kind": "type", "instruction": "Fill in a face.", "prompt": "Ea ___ sport în fiecare zi.", "answer": ["face"] },
+      { "id": "ilr-03.g.face.2", "kind": "type", "instruction": "Fill in a face.", "prompt": "Voi ___ baie seara?", "answer": ["faceți"] },
+      { "id": "ilr-03.g.face.3", "kind": "choice", "instruction": "What does it mean?", "promptLang": "en", "prompt": "to cook", "options": ["a face mâncare", "a face curat", "a face planuri"], "answer": ["a face mâncare"] },
+      { "id": "ilr-03.g.face.4", "kind": "choice", "instruction": "What does it mean?", "promptLang": "en", "prompt": "to make a mess", "options": ["a face mizerie", "a face duș", "a face sport"], "answer": ["a face mizerie"] },
+      { "id": "ilr-03.g.face.5", "kind": "order", "instruction": "Build the sentence.", "prompt": "I clean the house on Saturdays.", "answer": ["Fac curat în casă sâmbăta."] },
+      { "id": "ilr-03.g.face.6", "kind": "order", "instruction": "Build the sentence.", "prompt": "We make plans for the summer.", "answer": ["Facem planuri pentru vară."] },
+      { "id": "ilr-03.g.face.7", "kind": "order", "instruction": "Build the sentence.", "prompt": "The children make a mess.", "answer": ["Copiii fac mizerie."] }
+     ]
+    },
+    {
+     "id": "ilr-03.g.weather",
+     "title": "Talking about the weather",
+     "rule": "Weather verbs have no subject (no “it”): Plouă (it’s raining), Ninge (it’s snowing), Bate vântul (the wind is blowing). With adjectives use e / este: E însorit (it’s sunny), E înnorat (it’s cloudy). You can also say E soare (the sun is out).",
+     "examples": [
+      { "ro": "Azi plouă, dar mâine e soare.", "en": "Today it’s raining, but tomorrow it’s sunny." },
+      { "ro": "Iarna ninge și bate vântul.", "en": "In winter it snows and the wind blows." }
+     ],
+     "items": [
+      { "id": "ilr-03.g.weather.1", "kind": "choice", "instruction": "Pick the Romanian.", "promptLang": "en", "prompt": "It’s raining.", "options": ["Plouă.", "Ninge.", "Bate vântul."], "answer": ["Plouă."] },
+      { "id": "ilr-03.g.weather.2", "kind": "choice", "instruction": "Pick the Romanian.", "promptLang": "en", "prompt": "It’s snowing.", "options": ["Ninge.", "Plouă.", "E înnorat."], "answer": ["Ninge."] },
+      { "id": "ilr-03.g.weather.3", "kind": "type", "instruction": "Say it in Romanian.", "promptLang": "en", "prompt": "It’s sunny.", "answer": ["E însorit.", "Este însorit.", "E soare.", "Este soare."] },
+      { "id": "ilr-03.g.weather.4", "kind": "type", "instruction": "Say it in Romanian.", "promptLang": "en", "prompt": "It’s cloudy.", "answer": ["E înnorat.", "Este înnorat."] },
+      { "id": "ilr-03.g.weather.5", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "o zi ___ (însorit)", "answer": ["însorită"] },
+      { "id": "ilr-03.g.weather.6", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "zile ___ (înnorat)", "answer": ["înnorate"] },
+      { "id": "ilr-03.g.weather.7", "kind": "order", "instruction": "Build the sentence.", "prompt": "Today the wind is blowing.", "answer": ["Azi bate vântul.", "Bate vântul azi."] }
+     ]
+    },
+    {
+     "id": "ilr-03.g.nat",
+     "title": "Countries, languages and nationalities",
+     "rule": "For each country there is a man, a woman, plural forms and a language: România – român, româncă, români, românce – limba română. Suedia – suedez, suedeză, suedezi, suedeze – limba suedeză. A word ending in -că is usually the woman (româncă); the language usually ends in plain -ă (română). Adjectives in -esc / -ească / -ești say where a thing comes from: ceai românesc, mâncare românească, vinuri românești.",
+     "examples": [
+      { "ro": "El e român, ea e româncă. Ei vorbesc limba română.", "en": "He is Romanian, she is Romanian. They speak Romanian." },
+      { "ro": "un vin românesc, o supă românească", "en": "a Romanian wine, a Romanian soup" }
+     ],
+     "items": [
+      { "id": "ilr-03.g.nat.1", "say": "un român, o româncă", "kind": "type", "instruction": "Now the woman.", "prompt": "un român → o ___", "answer": ["româncă"] },
+      { "id": "ilr-03.g.nat.2", "say": "un suedez, o suedeză", "kind": "type", "instruction": "Now the woman.", "prompt": "un suedez → o ___", "answer": ["suedeză"] },
+      { "id": "ilr-03.g.nat.3", "say": "un român, doi români", "kind": "type", "instruction": "Make it plural.", "prompt": "un român → doi ___", "answer": ["români"] },
+      { "id": "ilr-03.g.nat.4", "say": "o româncă, două românce", "kind": "type", "instruction": "Make it plural.", "prompt": "o româncă → două ___", "answer": ["românce"] },
+      { "id": "ilr-03.g.nat.5", "say": "un suedez, doi suedezi", "kind": "type", "instruction": "Make it plural.", "prompt": "un suedez → doi ___", "answer": ["suedezi"] },
+      { "id": "ilr-03.g.nat.6", "kind": "choice", "instruction": "Pick the Romanian.", "promptLang": "en", "prompt": "a Romanian woman", "options": ["o româncă", "o română", "un român"], "answer": ["o româncă"] },
+      { "id": "ilr-03.g.nat.7", "kind": "choice", "instruction": "Pick the Romanian.", "promptLang": "en", "prompt": "the Romanian language", "options": ["limba română", "limba româncă", "limba românesc"], "answer": ["limba română"] },
+      { "id": "ilr-03.g.nat.8", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "un vin ___ (românesc)", "answer": ["românesc"] },
+      { "id": "ilr-03.g.nat.9", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "o supă ___ (românesc)", "answer": ["românească"] },
+      { "id": "ilr-03.g.nat.10", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "două vinuri ___ (suedez)", "answer": ["suedeze"] },
+      { "id": "ilr-03.g.nat.11", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "doi prieteni ___ (suedez)", "answer": ["suedezi"] },
+      { "id": "ilr-03.g.nat.12", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "brânză ___ (românesc)", "answer": ["românească"] }
+     ]
+    },
+    {
+     "id": "ilr-03.g.gen",
+     "title": "Gender practice",
+     "rule": "Use what you learned in Lecția 2: the ending, natural gender for people and animals, and the un – două test (masculine un – doi, feminine o – două, neuter un – două).",
+     "examples": [
+      { "ro": "un cal – doi cai", "en": "masculine" },
+      { "ro": "o lalea – două lalele", "en": "feminine" },
+      { "ro": "un pat – două paturi", "en": "neuter" }
+     ],
+     "items": [
+      { "id": "ilr-03.g.gen.1", "kind": "choice", "say": "un castor", "instruction": "Which gender?", "prompt": "castor", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-03.g.gen.2", "kind": "choice", "say": "un ghiveci", "instruction": "Which gender?", "prompt": "ghiveci", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-03.g.gen.3", "kind": "choice", "say": "un pat", "instruction": "Which gender?", "prompt": "pat", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-03.g.gen.4", "kind": "choice", "say": "un trandafir", "instruction": "Which gender?", "prompt": "trandafir", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-03.g.gen.5", "kind": "choice", "say": "o lalea", "instruction": "Which gender?", "prompt": "lalea", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-03.g.gen.6", "kind": "choice", "say": "un mango", "instruction": "Which gender?", "prompt": "mango", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-03.g.gen.7", "kind": "choice", "say": "un munte", "instruction": "Which gender?", "prompt": "munte", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-03.g.gen.8", "kind": "choice", "say": "o foaie", "instruction": "Which gender?", "prompt": "foaie", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-03.g.gen.9", "kind": "choice", "say": "un cal", "instruction": "Which gender?", "prompt": "cal", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-03.g.gen.10", "kind": "choice", "say": "un iepure", "instruction": "Which gender?", "prompt": "iepure", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-03.g.gen.11", "kind": "choice", "say": "un weekend", "instruction": "Which gender?", "prompt": "weekend", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-03.g.gen.12", "kind": "choice", "say": "o chelneriță", "instruction": "Which gender?", "prompt": "chelneriță", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-03.g.gen.13", "kind": "choice", "say": "o baterie", "instruction": "Which gender?", "prompt": "baterie", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-03.g.gen.14", "kind": "choice", "say": "un cireș", "instruction": "Which gender?", "prompt": "cireș", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-03.g.gen.15", "kind": "choice", "say": "un link", "instruction": "Which gender?", "prompt": "link", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] }
+     ]
+    }
+   ]
   }
  ]
 }

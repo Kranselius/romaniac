@@ -32,7 +32,7 @@
   { "id": "greet.bine", "deck": "greet", "type": "other", "ro": ["bine"], "en": ["well", "fine", "good", "ok"] },
   { "id": "greet.foarte-bine", "deck": "greet", "type": "phrase", "ro": ["Foarte bine"], "en": ["very well", "very good"] },
   { "id": "greet.cum-te-cheama", "deck": "greet", "type": "phrase", "ro": ["Cum te cheamă?", "cum te numești"], "en": ["what's your name?", "what is your name"] },
-  { "id": "greet.ma-numesc", "deck": "greet", "type": "phrase", "ro": ["Mă numesc …", "mă numesc", "mă cheamă"], "en": ["my name is …", "my name is"] },
+  { "id": "greet.ma-numesc", "deck": "greet", "type": "phrase", "ro": ["Mă numesc …", "mă numesc", "mă cheamă", "numele meu este"], "en": ["my name is …", "my name is"] },
   { "id": "greet.incantat", "deck": "greet", "type": "phrase", "ro": ["Încântat", "încântată"], "en": ["nice to meet you", "pleased to meet you"] },
   { "id": "greet.pofta-buna", "deck": "greet", "type": "phrase", "ro": ["Poftă bună"], "en": ["enjoy your meal", "bon appetit"] },
   { "id": "greet.noroc", "deck": "greet", "type": "phrase", "ro": ["Noroc"], "en": ["cheers", "good luck"] },
