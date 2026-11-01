@@ -51,6 +51,7 @@ export function renderSettings(root) {
         'Gentle and optional. Reaching it means confetti; missing it means nothing at all.', true),
       row('New words per session', stepper(s.newPerSession, { min: 0, max: 15, step: 1 }, v => save({ newPerSession: v }))),
       row('Lenient diacritics', toggle(s.lenient, v => save({ lenient: v })), 'Accept answers with missing ă â î ș ț (the correct spelling is always shown).'),
+      row('ILR words in word reviews', toggle(s.ilrInReviews, v => save({ ilrInReviews: v })), 'Lesson words you have met also come up in normal word practice. New lesson words are only introduced in ILR Mode.'),
       row('Sound effects', toggle(s.sound, v => save({ sound: v }))),
       row('Show Lupi the wolf', toggle(s.mascot, v => save({ mascot: v })))),
 

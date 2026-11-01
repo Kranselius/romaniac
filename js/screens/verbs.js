@@ -7,6 +7,9 @@ import { cheer, confetti, mascot, sound, toast } from '../fx.js';
 import { cellStage, personsFor, tenseMastered, verbStars } from '../progress.js';
 import { tileSet, joinTiles, sentenceFor } from '../conjugation.js';
 
+// Verbs that appear in an ILR lesson get an ILR tag (lesson numbers).
+const ilrLessons = verbId => state.lessons.filter(l => (l.verbs || []).includes(verbId)).map(l => l.number);
+
 const LEVELS = [['beginner', 'Beginner'], ['intermediate', 'Intermediate'], ['advanced', 'Advanced']];
 const PERSON_LABEL = { eu: 'eu', tu: 'tu', el: 'el/ea', noi: 'noi', voi: 'voi', ei: 'ei/ele', tu_neg: 'tu', voi_neg: 'voi' };
 const MODES = [
@@ -35,21 +38,29 @@ export function renderVerbPicker(root) {
     autocomplete: 'off', autocorrect: 'off', autocapitalize: 'none', spellcheck: 'false',
   });
 
+  const row = v => {
+    const stars = verbStars(v);
+    const ilr = ilrLessons(v.id);
+    return h('a', { class: 'verb-row', href: `#/verb/${v.id}` },
+      h('span', { class: 'verb-inf' }, v.inf),
+      h('span', { class: 'verb-en' }, v.en),
+      ilr.length ? h('span', { class: 'ilr-tag' }, 'ILR') : null,
+      stars ? h('span', { class: 'verb-stars' }, `★${stars}`) : null);
+  };
   const draw = () => {
     clear(list);
     const q = simplify(search.value);
+    const matches = v => !q || simplify(v.inf).includes(q) || v.en.toLowerCase().includes(q);
+    const fromLessons = verbs.filter(v => ilrLessons(v.id).length && matches(v)).sort((a, b) => a.inf.localeCompare(b.inf, 'ro'));
+    if (fromLessons.length) {
+      list.append(h('h3', { class: 'level-head' }, '🎓 From your ILR lessons'));
+      fromLessons.forEach(v => list.append(row(v)));
+    }
     for (const [lvl, label] of LEVELS) {
-      const matches = verbs.filter(v => v.level === lvl && (!q || simplify(v.inf).includes(q) || v.en.toLowerCase().includes(q)))
-        .sort((a, b) => a.inf.localeCompare(b.inf, 'ro'));
-      if (!matches.length) continue;
+      const inLevel = verbs.filter(v => v.level === lvl && matches(v)).sort((a, b) => a.inf.localeCompare(b.inf, 'ro'));
+      if (!inLevel.length) continue;
       list.append(h('h3', { class: 'level-head' }, label));
-      for (const v of matches) {
-        const stars = verbStars(v);
-        list.append(h('a', { class: 'verb-row', href: `#/verb/${v.id}` },
-          h('span', { class: 'verb-inf' }, v.inf),
-          h('span', { class: 'verb-en' }, v.en),
-          stars ? h('span', { class: 'verb-stars' }, `★${stars}`) : null));
-      }
+      inLevel.forEach(v => list.append(row(v)));
     }
     if (!list.children.length) list.append(h('p', { class: 'muted center' }, 'No verbs match that search.'));
   };
@@ -95,7 +106,8 @@ export function renderVerbDrill(root, verbId) {
   root.append(h('section', { class: 'screen verb-drill' },
     h('div', { class: 'verb-head card' },
       h('div', { class: 'verb-title' }, h('h1', { class: 'ro' }, verb.inf), speakerButton(verb.inf), starsEl),
-      h('div', { class: 'muted' }, verb.en, ' · ', h('span', { class: 'chip' }, verb.group), ' ', h('span', { class: 'chip' }, verb.level))),
+      h('div', { class: 'muted' }, verb.en, ' · ', h('span', { class: 'chip' }, verb.group), ' ', h('span', { class: 'chip' }, verb.level),
+        ...ilrLessons(verb.id).slice(0, 1).map(n => [' ', h('span', { class: 'ilr-tag' }, `ILR · Lecția ${n}`)]))),
     h('details', { class: 'tense-box' }, h('summary', {}, 'Tenses to practice'), tenseChips),
     modeTabs,
     h('div', { class: 'top-row' }, comboEl, m.el),

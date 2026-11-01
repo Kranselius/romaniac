@@ -1,6 +1,6 @@
 // Service worker: precache everything for offline use. Bump VERSION on every release;
 // the page then shows "New version ready, tap to refresh" instead of updating silently.
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.1.0';
 const CACHE = `romaniac-${VERSION}`;
 // On a local dev server, prefer the network so edits show up without bumping VERSION.
 const DEV = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
@@ -18,6 +18,7 @@ const ASSETS = [
   'icons/icon-maskable-512.png',
   'data/vocab.json',
   'data/verbs.json',
+  'data/ilr.json',
   'js/main.js',
   'js/answer.js',
   'js/day.js',
@@ -30,7 +31,9 @@ const ASSETS = [
   'js/store.js',
   'js/tts.js',
   'js/ui.js',
+  'js/screens/grammar.js',
   'js/screens/home.js',
+  'js/screens/ilr.js',
   'js/screens/practice.js',
   'js/screens/progress.js',
   'js/screens/settings.js',

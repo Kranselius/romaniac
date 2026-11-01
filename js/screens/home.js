@@ -80,7 +80,8 @@ export function renderHome(root) {
             : pts > 0 ? 'Nice work today. Keep it fun!' : 'Ready when you are. 😊')),
       h('div', { class: 'big-buttons' },
         h('a', { class: 'big-btn blue', href: '#/practice' }, h('span', { class: 'big-emoji' }, '📚'), 'Practice words'),
-        h('a', { class: 'big-btn yellow', href: '#/verbs' }, h('span', { class: 'big-emoji' }, '🐺'), 'Verb mode')),
+        h('a', { class: 'big-btn yellow', href: '#/verbs' }, h('span', { class: 'big-emoji' }, '🐺'), 'Verb mode'),
+        h('a', { class: 'big-btn ilr', href: '#/ilr' }, h('span', { class: 'big-emoji' }, '🎓'), 'ILR Mode')),
       weekChart(),
     ));
 }

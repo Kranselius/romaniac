@@ -366,3 +366,39 @@ summary { font-weight: 900; cursor: pointer; padding: 4px 0; }
   .today { flex-direction: column; text-align: center; }
   .stats, .badges { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ---------- ILR Mode ---------- */
+.big-btn.ilr {
+  grid-column: 1 / -1; min-height: 84px; flex-direction: row; gap: 12px;
+  background: var(--paper); color: var(--ink); box-shadow: 0 6px 0 #ead9c4; border-left: 8px solid var(--red);
+}
+.big-btn.ilr .big-emoji { font-size: 2rem; }
+.btn.plain { background: var(--paper); color: var(--ink); box-shadow: 0 4px 0 #e7dece; }
+.scope-title { font-weight: 900; color: var(--muted); font-size: .9rem; margin: 4px 0 2px; }
+.scope-buttons { display: flex; flex-direction: column; gap: 4px; margin-bottom: 6px; }
+.lesson-row { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
+.lesson-num {
+  width: 52px; height: 52px; flex: none; border-radius: 16px; display: grid; place-items: center;
+  background: var(--blue-soft); color: var(--blue-deep); font-weight: 900; font-size: 1.4rem; border-left: 5px solid var(--red);
+}
+.lesson-info { flex: 1; min-width: 0; }
+.lesson-title { font-weight: 900; font-size: 1.05rem; }
+.lesson-progress { margin-top: 6px; }
+.lesson-progress .level-bar { height: 8px; margin: 4px 0; }
+.ilr-lesson h1 { margin-bottom: 4px; }
+.verb-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.verb-chips .chip { text-decoration: none; display: inline-flex; align-items: center; }
+.ilr-tag { background: #fde3e5; color: #a3313b; border-radius: 999px; padding: 2px 8px; font-weight: 900; font-size: .72rem; white-space: nowrap; }
+.instruction { font-weight: 800; text-align: center; color: var(--ink); margin-bottom: 4px; }
+.rule-toggle { display: block; margin: 0 auto; }
+.rule-box { background: var(--yellow-soft); border-radius: 16px; padding: 10px 14px; margin: 6px 0 10px; font-size: .95rem; }
+.rule-box p { margin: 0 0 6px; }
+.rule-box ul { margin: 0; padding-left: 18px; }
+.sheet h2 { margin-bottom: 8px; }
+.sheet-table { width: 100%; border-collapse: collapse; }
+.sheet-table td { padding: 7px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.sheet-table tr:last-child td { border-bottom: 0; }
+.sheet-table td:first-child { width: 48%; color: var(--blue-deep); }
+.sheet ul { padding-left: 18px; margin: 0; }
+.sheet li { margin: 4px 0; }
+.say { cursor: pointer; text-decoration: underline dotted var(--muted); text-underline-offset: 3px; }

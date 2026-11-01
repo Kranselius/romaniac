@@ -24,6 +24,8 @@ The tests check the verb tables (every form for every tense, nothing empty, spot
 - **Verbs:** edit the principal parts in `tools/verb-sources.mjs`, then run `npm run build:verbs` to regenerate the complete tables in `data/verbs.json`. Irregular forms go in each verb's `x` overrides. You can also edit `data/verbs.json` directly, but then `npm test` will report that it no longer matches the sources.
 - **Icons:** `npm run build:icons`.
 
+- **ILR lessons:** `data/ilr.json` holds practice content made from the ILR class lessons (see SPEC.md, section 7). The class PDFs and notes stay outside the repo in `C:\projects\ilr\lectia-NN\`; ask Claude Code to "add lesson NN" (procedure in `.claude/skills/add-ilr-lesson/`, local only). `npm test` validates the lesson file.
+
 ## Releasing an update
 
 1. Bump `VERSION` in `sw.js` (and add any new files to its `ASSETS` list; `npm test` catches missing ones).

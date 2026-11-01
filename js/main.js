@@ -8,6 +8,7 @@ import { renderPractice } from './screens/practice.js';
 import { renderVerbPicker, renderVerbDrill } from './screens/verbs.js';
 import { renderProgress } from './screens/progress.js';
 import { renderSettings } from './screens/settings.js';
+import { renderIlrHome, renderIlrScope, renderIlrSheet, renderIlrPractice, renderIlrGrammar } from './screens/ilr.js';
 
 const app = document.getElementById('app');
 const backBtn = document.getElementById('back');
@@ -20,6 +21,11 @@ const ROUTES = [
   [/^#\/verb\/([\w-]+)$/, m => renderVerbDrill(app, m[1]), true, '#/verbs'],
   [/^#\/progress$/, () => renderProgress(app), true],
   [/^#\/settings$/, () => renderSettings(app), true],
+  [/^#\/ilr$/, () => renderIlrHome(app), true],
+  [/^#\/ilr\/([\w-]+)$/, m => renderIlrScope(app, m[1]), true, '#/ilr'],
+  [/^#\/ilr\/([\w-]+)\/practice$/, m => renderIlrPractice(app, m[1]), true, m => `#/ilr/${m[1]}`],
+  [/^#\/ilr\/([\w-]+)\/grammar$/, m => renderIlrGrammar(app, m[1]), true, m => `#/ilr/${m[1]}`],
+  [/^#\/ilr\/([\w-]+)\/sheet$/, m => renderIlrSheet(app, m[1]), true, m => `#/ilr/${m[1]}`],
 ];
 
 function route() {
@@ -31,7 +37,7 @@ function route() {
     const m = hash.match(re);
     if (m) {
       backBtn.classList.toggle('hidden', !showBack);
-      backBtn.dataset.to = backTo || '#/';
+      backBtn.dataset.to = (typeof backTo === 'function' ? backTo(m) : backTo) || '#/';
       document.body.dataset.route = hash.split('/')[1] || 'home';
       render(m);
       return;

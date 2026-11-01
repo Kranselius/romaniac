@@ -175,6 +175,41 @@ Verb mode is separate from the spaced-repetition cards. It's free, endless pract
 5. More vocabulary exercise types
 6. Polish: animations, sounds, mascot, badges, more decks
 
+## 7. ILR Mode
+
+A separate part of the app for practicing what I learn in my ILR Romanian classes, growing lesson by lesson.
+
+- **Course material stays private.**
+  - The class PDFs and notes live only on my computer, in `ilr/lectia-NN/` (gitignored). They never go into the repo or the app.
+  - Only practice content derived from them is published: vocabulary, short phrases, verbs, and grammar practice items.
+  - Dialogues, texts and exercises are not copied verbatim. Practice sentences are newly written using the lesson's words and grammar.
+- **Adding a lesson (with Claude Code, after each class):**
+  1. Put the lesson's PDFs and notes (typed, or photos of handwritten pages) in `ilr/lectia-NN/`.
+  2. Ask Claude Code to "add lesson NN". It follows the same saved procedure every time.
+  3. It writes the lesson into `data/ilr.json` and shows a short summary.
+  4. It flags anything uncertain, like a hard-to-read handwritten word or an apparent typo, and asks instead of silently "correcting" it.
+  5. After approval: data checks, version bump, deploy. The phone shows "new version ready" and progress is kept.
+- **Lesson content:**
+  - Words and phrases, as cards with stable ids (same format as the starter decks, including noun and adjective extras).
+  - Verbs, linked to verb mode. Verbs not yet in verb mode get full conjugation tables added.
+  - Grammar points: a short rule, examples, and practice items of three kinds:
+    - **type:** fill the gap or transform ("make it plural", "add the definite article"), answer typed
+    - **choice:** pick the right form
+    - **order:** rebuild a sentence from scrambled words
+- **Screens:**
+  - Lesson list (Lecția 1, 2, 3…), each with its topic and progress.
+  - "Everything so far" and "Review before next class" (the last two lessons).
+  - Per lesson:
+    - Practice this lesson: spaced repetition with the same exercises as word practice, plus a relaxed review of all its words.
+    - Grammar drills: rounds of that lesson's grammar items, with the rule one tap away.
+    - Lesson sheet: a one-page summary of the words, verbs and rules, for a quick look before class.
+    - Add to lesson: type a word or phrase on the phone the moment the teacher says it. It's practiced like the other words. If a later lesson file contains the same word, the two merge and its progress carries over.
+- **Shared with the rest of the app:**
+  - Lesson words that have been introduced come up in normal word reviews (setting to turn that off). New lesson words are only introduced in ILR Mode.
+  - Lesson verbs appear in verb mode with an ILR tag.
+  - All points go into the same daily and weekly totals.
+- **Mastery:** a grammar item counts as mastered after correct answers on 2 different days, matching words and verbs.
+
 ## Testing
 
 - Test in Chrome on Android, or a mobile emulator in Chrome DevTools.

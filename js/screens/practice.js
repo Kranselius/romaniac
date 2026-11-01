@@ -11,15 +11,20 @@ const SESSION_SIZE = 20;
 const MAX_RETRIES = 2;
 const GENDER = { m: 'masculine', f: 'feminine', n: 'neuter' };
 
-function plan() {
+// `scope` limits a session to some cards, e.g. one ILR lesson:
+// { title, cards: () => Card[], newCap, back }. Without it, this is normal word practice,
+// where new ILR lesson words are never introduced (that happens in ILR Mode) and their
+// reviews only appear when the setting allows.
+function plan(scope) {
   const today = dayKey();
   const s = getSettings();
-  const cards = activeCards();
-  const due = cards.filter(c => isDue(c.srs, today))
+  const cards = scope ? scope.cards() : activeCards();
+  const due = cards.filter(c => isDue(c.srs, today) && (scope || !c.ilr || s.ilrInReviews))
     // Lowest recall probability first: the cards most at risk of being forgotten.
     .sort((a, b) => retrievability(a.srs, today) - retrievability(b.srs, today));
-  const fresh = cards.filter(c => c.srs.state === 'new').sort((a, b) => a.order - b.order);
-  const nNew = Math.min(s.newPerSession, fresh.length);
+  const fresh = cards.filter(c => c.srs.state === 'new' && (scope || !c.ilr));
+  if (!scope) fresh.sort((a, b) => a.order - b.order); // a scope's cards are already in lesson order
+  const nNew = Math.min(scope?.newCap ?? s.newPerSession, fresh.length);
   const nRev = Math.min(SESSION_SIZE - nNew, due.length);
   return {
     due: due.slice(0, nRev),
@@ -102,31 +107,33 @@ function extrasFor(card) {
   return null;
 }
 
-export function renderPractice(root) {
-  const p = plan();
+export function renderPractice(root, scope = null) {
+  const p = plan(scope);
   const s = getSettings();
   const size = p.due.length + p.fresh.length;
   const screen = h('section', { class: 'screen practice-start' });
   root.append(screen);
+  if (scope) screen.append(h('div', { class: 'scope-title' }, '🎓 ', scope.title));
+  const relaxedBtn = () => h('button', { class: 'btn secondary big', onclick: () => start(root, relaxedQueue(p.learned), 'relaxed', scope) },
+    scope ? `🌿 Relaxed review (${Math.min(SESSION_SIZE, p.learned.length)} words you've met)` : '🌿 Relaxed review');
 
   if (p.due.length) {
     screen.append(h('div', { class: 'card center' },
       h('div', { class: 'start-emoji' }, '📚'),
       h('h1', {}, `A session of ${size} is ready`),
       p.fresh.length ? h('p', {}, `Including ${p.fresh.length} new word${p.fresh.length > 1 ? 's' : ''} to meet.`) : null,
-      h('button', { class: 'btn primary big', onclick: () => start(root, buildQueue(p.due, p.fresh), 'srs') }, 'Start')));
+      h('button', { class: 'btn primary big', onclick: () => start(root, buildQueue(p.due, p.fresh), 'srs', scope) }, 'Start'),
+      // Before class you may want to go over everything, not just what's due.
+      scope && p.learned.length ? relaxedBtn() : null));
     return;
   }
 
   const options = [];
   if (p.fresh.length) {
-    options.push(h('button', { class: 'btn primary big', onclick: () => start(root, buildQueue([], p.fresh), 'srs') },
+    options.push(h('button', { class: 'btn primary big', onclick: () => start(root, buildQueue([], p.fresh), 'srs', scope) },
       `✨ Learn ${p.fresh.length} new word${p.fresh.length > 1 ? 's' : ''}`));
   }
-  if (p.learned.length) {
-    options.push(h('button', { class: 'btn secondary big', onclick: () => start(root, relaxedQueue(p.learned), 'relaxed') },
-      '🌿 Relaxed review'));
-  }
+  if (p.learned.length) options.push(relaxedBtn());
   if (!p.learned.length && p.fresh.length) {
     screen.append(h('div', { class: 'card center' },
       h('div', { class: 'start-emoji' }, '🌱'),
@@ -142,7 +149,7 @@ export function renderPractice(root) {
       'Nothing is scheduled right now.',
       p.fresh.length && p.learned.length ? 'Want to meet new words, or play with ones you know?' : p.fresh.length ? 'Want to meet some new words?' : '',
       p.learned.length ? 'Relaxed review earns points without changing your schedule.' : '',
-      !p.fresh.length && s.newPerSession === 0 ? 'New words are set to 0 per session — you can change that in Settings.' : '',
+      !scope && !p.fresh.length && s.newPerSession === 0 ? 'New words are set to 0 per session — you can change that in Settings.' : '',
       !options.length ? 'Come back any time. 😊' : '',
     ].filter(Boolean).join(' ')),
     ...options));
@@ -152,9 +159,9 @@ function relaxedQueue(learned) {
   return shuffle(learned).slice(0, SESSION_SIZE).map(card => ({ card, kind: 'test', ex: pickExercise(card, true), srs: false, relaxed: true }));
 }
 
-function start(root, items, mode) {
+function start(root, items, mode, scope = null) {
   clear(root);
-  const sess = { items, i: 0, graded: new Set(), retries: new Map(), wrong: false, points: 0, correct: 0, answered: 0, mode };
+  const sess = { items, i: 0, graded: new Set(), retries: new Map(), wrong: false, points: 0, correct: 0, answered: 0, mode, scope };
   const m = mascot();
   const fill = h('div', { class: 'progress-fill' });
   const stage = h('div', { class: 'stage' });
@@ -409,7 +416,7 @@ async function finish(root, sess) {
       h('div', { class: 'big-points' }, `+${sess.points}`, h('small', {}, ' points')),
       sess.answered ? h('p', {}, `${sess.correct} of ${sess.answered} answers correct${perfect ? ' — including a +20 perfect bonus!' : '. Lovely work.'}`) : null,
       h('div', { class: 'stack' },
-        h('a', { class: 'btn primary big', href: '#/' }, 'Home'),
-        h('button', { class: 'btn secondary big', onclick: () => { clear(root); renderPractice(root); } }, 'Keep going')))));
+        h('a', { class: 'btn primary big', href: sess.scope?.back || '#/' }, sess.scope ? 'Back to lesson' : 'Home'),
+        h('button', { class: 'btn secondary big', onclick: () => { clear(root); renderPractice(root, sess.scope); } }, 'Keep going')))));
   if (perfect) { confetti(); sound.celebrate(); }
 }

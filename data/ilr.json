@@ -1,0 +1,314 @@
+{
+ "lessons": [
+  {
+   "id": "ilr-01",
+   "number": 1,
+   "title": "Recapitulare",
+   "topic": "Revision: introductions, family, food, home, time and dates",
+   "cards": [
+    { "id": "ilr-01.eu", "type": "other", "ro": ["eu"], "en": ["I"] },
+    { "id": "ilr-01.tu", "type": "other", "ro": ["tu"], "en": ["you (singular)", "you"] },
+    { "id": "ilr-01.el", "type": "other", "ro": ["el"], "en": ["he"] },
+    { "id": "ilr-01.ea", "type": "other", "ro": ["ea"], "en": ["she"] },
+    { "id": "ilr-01.noi", "type": "other", "ro": ["noi"], "en": ["we"] },
+    { "id": "ilr-01.voi", "type": "other", "ro": ["voi"], "en": ["you (plural)", "you"] },
+    { "id": "ilr-01.ei", "type": "other", "ro": ["ei"], "en": ["they (masculine or mixed)", "they"] },
+    { "id": "ilr-01.ele", "type": "other", "ro": ["ele"], "en": ["they (feminine)", "they"] },
+    { "id": "ilr-01.dumneavoastra", "type": "other", "ro": ["dumneavoastră"], "en": ["you (polite)", "you (formal)", "you"] },
+
+    { "ref": "greet.cum-te-cheama" },
+    { "ref": "greet.ma-numesc" },
+    { "id": "ilr-01.cati-ani-ai", "type": "phrase", "ro": ["Câți ani ai?"], "en": ["how old are you?", "how old are you"] },
+    { "id": "ilr-01.am-30-de-ani", "type": "phrase", "ro": ["Am treizeci de ani."], "en": ["I am thirty years old", "I'm thirty years old", "I am thirty", "I'm thirty"] },
+    { "id": "ilr-01.de-unde-esti", "type": "phrase", "ro": ["De unde ești?"], "en": ["where are you from?", "where are you from"] },
+    { "id": "ilr-01.sunt-din-suedia", "type": "phrase", "ro": ["Sunt din Suedia."], "en": ["I am from Sweden", "I'm from Sweden"] },
+    { "id": "ilr-01.locuiesc-apartament", "type": "phrase", "ro": ["Locuiesc într-un apartament."], "en": ["I live in a flat", "I live in an apartment", "I live in a flat / apartment"] },
+    { "id": "ilr-01.suedez", "type": "adjective", "ro": ["suedez", "suedeză"], "en": ["Swedish"], "forms": ["suedez", "suedeză", "suedezi", "suedeze"] },
+    { "id": "ilr-01.roman", "type": "adjective", "ro": ["român", "română"], "en": ["Romanian"], "forms": ["român", "română", "români", "române"] },
+    { "id": "ilr-01.preferat", "type": "adjective", "ro": ["preferat", "preferată"], "en": ["favourite", "favorite"], "forms": ["preferat", "preferată", "preferați", "preferate"] },
+
+    { "ref": "time.cat-e-ceasul" },
+    { "ref": "time.ora" },
+    { "id": "ilr-01.si-jumatate", "type": "phrase", "ro": ["și jumătate"], "en": ["half past", "and a half"] },
+    { "id": "ilr-01.si-un-sfert", "type": "phrase", "ro": ["și un sfert"], "en": ["quarter past", "and a quarter"] },
+    { "id": "ilr-01.fara-un-sfert", "type": "phrase", "ro": ["fără un sfert"], "en": ["quarter to"] },
+    { "id": "ilr-01.fara", "type": "other", "ro": ["fără"], "en": ["without; to (telling time)", "without", "to", "minus"] },
+    { "id": "ilr-01.data", "type": "noun", "ro": ["dată"], "en": ["date"], "gender": "f", "plural": "date", "def": "data" },
+    { "ref": "time.luni" }, { "ref": "time.marti" }, { "ref": "time.miercuri" }, { "ref": "time.joi" },
+    { "ref": "time.vineri" }, { "ref": "time.sambata" }, { "ref": "time.duminica" },
+    { "id": "ilr-01.ianuarie", "type": "other", "ro": ["ianuarie"], "en": ["January"] },
+    { "id": "ilr-01.februarie", "type": "other", "ro": ["februarie"], "en": ["February"] },
+    { "id": "ilr-01.martie", "type": "other", "ro": ["martie"], "en": ["March"] },
+    { "id": "ilr-01.aprilie", "type": "other", "ro": ["aprilie"], "en": ["April"] },
+    { "id": "ilr-01.mai", "type": "other", "ro": ["mai"], "en": ["May"] },
+    { "id": "ilr-01.iunie", "type": "other", "ro": ["iunie"], "en": ["June"] },
+    { "id": "ilr-01.iulie", "type": "other", "ro": ["iulie"], "en": ["July"] },
+    { "id": "ilr-01.august", "type": "other", "ro": ["august"], "en": ["August"] },
+    { "id": "ilr-01.septembrie", "type": "other", "ro": ["septembrie"], "en": ["September"] },
+    { "id": "ilr-01.octombrie", "type": "other", "ro": ["octombrie"], "en": ["October"] },
+    { "id": "ilr-01.noiembrie", "type": "other", "ro": ["noiembrie"], "en": ["November"] },
+    { "id": "ilr-01.decembrie", "type": "other", "ro": ["decembrie"], "en": ["December"] },
+    { "id": "ilr-01.anotimp", "type": "noun", "ro": ["anotimp"], "en": ["season"], "gender": "n", "plural": "anotimpuri", "def": "anotimpul" },
+    { "id": "ilr-01.primavara", "type": "noun", "ro": ["primăvară"], "en": ["spring"], "gender": "f", "plural": "primăveri", "def": "primăvara" },
+    { "id": "ilr-01.vara", "type": "noun", "ro": ["vară"], "en": ["summer"], "gender": "f", "plural": "veri", "def": "vara" },
+    { "id": "ilr-01.toamna", "type": "noun", "ro": ["toamnă"], "en": ["autumn", "fall"], "gender": "f", "plural": "toamne", "def": "toamna" },
+    { "id": "ilr-01.iarna", "type": "noun", "ro": ["iarnă"], "en": ["winter"], "gender": "f", "plural": "ierni", "def": "iarna" },
+
+    { "ref": "fam.familie" }, { "ref": "fam.mama" }, { "ref": "fam.frate" }, { "ref": "fam.sora" },
+    { "ref": "fam.bunic" }, { "ref": "fam.var" }, { "ref": "fam.verisoara" },
+    { "id": "ilr-01.vecin", "type": "noun", "ro": ["vecin"], "en": ["neighbour", "neighbor"], "gender": "m", "plural": "vecini", "def": "vecinul" },
+    { "id": "ilr-01.fata", "type": "noun", "ro": ["fată"], "en": ["girl"], "gender": "f", "plural": "fete", "def": "fata" },
+    { "id": "ilr-01.elev", "type": "noun", "ro": ["elev"], "en": ["pupil (male)", "pupil", "student"], "gender": "m", "plural": "elevi", "def": "elevul" },
+    { "id": "ilr-01.eleva", "type": "noun", "ro": ["elevă"], "en": ["pupil (female)", "pupil", "student"], "gender": "f", "plural": "eleve", "def": "eleva" },
+    { "id": "ilr-01.profesor", "type": "noun", "ro": ["profesor"], "en": ["teacher (male)", "teacher"], "gender": "m", "plural": "profesori", "def": "profesorul" },
+    { "id": "ilr-01.profesoara", "type": "noun", "ro": ["profesoară"], "en": ["teacher (female)", "teacher"], "gender": "f", "plural": "profesoare", "def": "profesoara" },
+    { "id": "ilr-01.politist", "type": "noun", "ro": ["polițist"], "en": ["police officer", "policeman"], "gender": "m", "plural": "polițiști", "def": "polițistul" },
+    { "id": "ilr-01.artist", "type": "noun", "ro": ["artist"], "en": ["artist"], "gender": "m", "plural": "artiști", "def": "artistul" },
+    { "id": "ilr-01.caine", "type": "noun", "ro": ["câine"], "en": ["dog"], "gender": "m", "plural": "câini", "def": "câinele" },
+    { "id": "ilr-01.pisica", "type": "noun", "ro": ["pisică"], "en": ["cat"], "gender": "f", "plural": "pisici", "def": "pisica" },
+    { "id": "ilr-01.mana", "type": "noun", "ro": ["mână"], "en": ["hand"], "gender": "f", "plural": "mâini", "def": "mâna" },
+    { "id": "ilr-01.ochi", "type": "noun", "ro": ["ochi"], "en": ["eye"], "gender": "m", "plural": "ochi", "def": "ochiul" },
+    { "id": "ilr-01.nas", "type": "noun", "ro": ["nas"], "en": ["nose"], "gender": "n", "plural": "nasuri", "def": "nasul" },
+
+    { "id": "ilr-01.casa", "type": "noun", "ro": ["casă"], "en": ["house", "home"], "gender": "f", "plural": "case", "def": "casa" },
+    { "id": "ilr-01.apartament", "type": "noun", "ro": ["apartament"], "en": ["flat", "apartment"], "gender": "n", "plural": "apartamente", "def": "apartamentul" },
+    { "id": "ilr-01.camera", "type": "noun", "ro": ["cameră"], "en": ["room"], "gender": "f", "plural": "camere", "def": "camera" },
+    { "id": "ilr-01.dormitor", "type": "noun", "ro": ["dormitor"], "en": ["bedroom"], "gender": "n", "plural": "dormitoare", "def": "dormitorul" },
+    { "id": "ilr-01.baie", "type": "noun", "ro": ["baie"], "en": ["bathroom", "bath"], "gender": "f", "plural": "băi", "def": "baia" },
+    { "id": "ilr-01.balcon", "type": "noun", "ro": ["balcon"], "en": ["balcony"], "gender": "n", "plural": "balcoane", "def": "balconul" },
+    { "id": "ilr-01.bucatarie", "type": "noun", "ro": ["bucătărie"], "en": ["kitchen"], "gender": "f", "plural": "bucătării", "def": "bucătăria" },
+    { "id": "ilr-01.fereastra", "type": "noun", "ro": ["fereastră"], "en": ["window"], "gender": "f", "plural": "ferestre", "def": "fereastra" },
+    { "id": "ilr-01.scaun", "type": "noun", "ro": ["scaun"], "en": ["chair"], "gender": "n", "plural": "scaune", "def": "scaunul" },
+    { "id": "ilr-01.pix", "type": "noun", "ro": ["pix"], "en": ["pen"], "gender": "n", "plural": "pixuri", "def": "pixul" },
+    { "id": "ilr-01.telefon", "type": "noun", "ro": ["telefon"], "en": ["phone", "telephone"], "gender": "n", "plural": "telefoane", "def": "telefonul" },
+    { "id": "ilr-01.laptop", "type": "noun", "ro": ["laptop"], "en": ["laptop"], "gender": "n", "plural": "laptopuri", "def": "laptopul" },
+    { "id": "ilr-01.carte", "type": "noun", "ro": ["carte"], "en": ["book"], "gender": "f", "plural": "cărți", "def": "cartea" },
+    { "id": "ilr-01.masina", "type": "noun", "ro": ["mașină"], "en": ["car"], "gender": "f", "plural": "mașini", "def": "mașina" },
+    { "id": "ilr-01.scoala", "type": "noun", "ro": ["școală"], "en": ["school"], "gender": "f", "plural": "școli", "def": "școala" },
+    { "id": "ilr-01.culoare", "type": "noun", "ro": ["culoare"], "en": ["colour", "color"], "gender": "f", "plural": "culori", "def": "culoarea" },
+    { "id": "ilr-01.floare", "type": "noun", "ro": ["floare"], "en": ["flower"], "gender": "f", "plural": "flori", "def": "floarea" },
+    { "id": "ilr-01.avion", "type": "noun", "ro": ["avion"], "en": ["plane", "airplane", "aeroplane"], "gender": "n", "plural": "avioane", "def": "avionul" },
+    { "id": "ilr-01.autobuz", "type": "noun", "ro": ["autobuz"], "en": ["bus"], "gender": "n", "plural": "autobuze", "def": "autobuzul" },
+    { "id": "ilr-01.cu-autobuzul", "type": "phrase", "ro": ["cu autobuzul"], "en": ["by bus"] },
+    { "id": "ilr-01.supermarket", "type": "noun", "ro": ["supermarket"], "en": ["supermarket"], "gender": "n", "plural": "supermarketuri", "def": "supermarketul" },
+    { "id": "ilr-01.cand-pleaca-avionul", "type": "phrase", "ro": ["Când pleacă următorul avion?"], "en": ["when does the next plane leave?", "when does the next plane leave"] },
+
+    { "ref": "adj.rosu" }, { "ref": "adj.galben" }, { "ref": "adj.verde" }, { "ref": "adj.albastru" },
+    { "id": "ilr-01.portocaliu", "type": "adjective", "ro": ["portocaliu", "portocalie"], "en": ["orange (colour)", "orange"], "forms": ["portocaliu", "portocalie", "portocalii", "portocalii"] },
+    { "id": "ilr-01.violet", "type": "adjective", "ro": ["violet", "violetă"], "en": ["violet", "purple"], "forms": ["violet", "violetă", "violeți", "violete"] },
+    { "id": "ilr-01.roz", "type": "adjective", "ro": ["roz"], "en": ["pink"], "forms": ["roz", "roz", "roz", "roz"] },
+    { "id": "ilr-01.maro", "type": "adjective", "ro": ["maro"], "en": ["brown"], "forms": ["maro", "maro", "maro", "maro"] },
+    { "id": "ilr-01.gri", "type": "adjective", "ro": ["gri"], "en": ["grey", "gray"], "forms": ["gri", "gri", "gri", "gri"] },
+
+    { "ref": "food.restaurant" }, { "ref": "food.ciocolata" }, { "ref": "food.apa" }, { "ref": "food.suc" },
+    { "ref": "food.peste" }, { "ref": "food.pui" }, { "ref": "food.cartof" }, { "ref": "food.rosie" },
+    { "ref": "food.vin" }, { "ref": "food.nota-va-rog" },
+    { "id": "ilr-01.cartofi-prajiti", "type": "phrase", "ro": ["cartofi prăjiți"], "en": ["fries", "chips", "French fries"] },
+    { "id": "ilr-01.friptura", "type": "noun", "ro": ["friptură"], "en": ["roast meat, steak", "roast", "steak"], "gender": "f", "plural": "fripturi", "def": "friptura" },
+    { "id": "ilr-01.carne-de-porc", "type": "phrase", "ro": ["carne de porc"], "en": ["pork"] },
+    { "id": "ilr-01.chiftea", "type": "noun", "ro": ["chiftea"], "en": ["meatball"], "gender": "f", "plural": "chiftele", "def": "chifteaua" },
+    { "id": "ilr-01.ciuperca", "type": "noun", "ro": ["ciupercă"], "en": ["mushroom"], "gender": "f", "plural": "ciuperci", "def": "ciuperca" },
+    { "id": "ilr-01.varza", "type": "noun", "ro": ["varză"], "en": ["cabbage"], "gender": "f", "plural": "verze", "def": "varza" },
+    { "id": "ilr-01.fasole-verde", "type": "phrase", "ro": ["fasole verde"], "en": ["green beans"] },
+    { "id": "ilr-01.porumb", "type": "noun", "ro": ["porumb"], "en": ["corn", "maize", "sweetcorn"], "gender": "m", "plural": "porumbi", "def": "porumbul" },
+    { "id": "ilr-01.ardei-iute", "type": "phrase", "ro": ["ardei iute"], "en": ["hot pepper", "chili pepper", "chilli"] },
+    { "id": "ilr-01.portocala", "type": "noun", "ro": ["portocală"], "en": ["orange (fruit)", "orange"], "gender": "f", "plural": "portocale", "def": "portocala" },
+    { "id": "ilr-01.suc-de-mere", "type": "phrase", "ro": ["suc de mere"], "en": ["apple juice"] },
+    { "id": "ilr-01.pepene-verde", "type": "phrase", "ro": ["pepene verde"], "en": ["watermelon"] },
+    { "id": "ilr-01.usturoi", "type": "noun", "ro": ["usturoi"], "en": ["garlic"], "gender": "m", "plural": "usturoi", "def": "usturoiul" },
+    { "id": "ilr-01.spanac", "type": "noun", "ro": ["spanac"], "en": ["spinach"], "gender": "n", "plural": "spanacuri", "def": "spanacul" },
+    { "id": "ilr-01.legume", "type": "noun", "ro": ["legumă"], "en": ["vegetable"], "gender": "f", "plural": "legume", "def": "leguma" },
+    { "id": "ilr-01.paste-cu-pui", "type": "phrase", "ro": ["paste cu pui"], "en": ["chicken pasta", "pasta with chicken"] },
+    { "id": "ilr-01.ce-doriti", "type": "phrase", "ro": ["Ce doriți?"], "en": ["what would you like? (polite)", "what would you like?", "what would you like"] },
+    { "id": "ilr-01.as-vrea-o-cafea", "type": "phrase", "ro": ["Aș vrea o cafea, vă rog."], "en": ["I would like a coffee, please", "I'd like a coffee, please", "I would like a coffee please"] },
+    { "id": "ilr-01.imi-place-ciocolata", "type": "phrase", "ro": ["Îmi place ciocolata."], "en": ["I like chocolate"] },
+    { "id": "ilr-01.imi-plac-ciupercile", "type": "phrase", "ro": ["Îmi plac ciupercile."], "en": ["I like mushrooms"] },
+    { "id": "ilr-01.nu-imi-place-pestele", "type": "phrase", "ro": ["Nu îmi place peștele.", "nu-mi place peștele"], "en": ["I don't like fish", "I do not like fish"] },
+    { "id": "ilr-01.imi-place-sa-dorm", "type": "phrase", "ro": ["Îmi place să dorm."], "en": ["I like to sleep", "I like sleeping"] },
+    { "id": "ilr-01.trebuie-sa-plec", "type": "phrase", "ro": ["Trebuie să plec."], "en": ["I have to go", "I have to leave", "I must go", "I must leave"] }
+   ],
+   "verbs": ["a-fi", "a-avea", "a-vrea", "a-putea", "a-merge", "a-manca", "a-bea", "a-sti", "a-dormi", "a-cumpara", "a-pleca", "a-locui"],
+   "grammar": [
+    {
+     "id": "ilr-01.g.pron",
+     "title": "Personal pronouns",
+     "rule": "eu (I), tu (you), el / ea (he / she), noi (we), voi (you, plural), ei / ele (they: masculine or mixed / only feminine). Dumneavoastră is the polite “you” and takes the voi form of the verb: Dumneavoastră aveți…",
+     "examples": [
+      { "ro": "Ei sunt frați, ele sunt surori.", "en": "They are brothers, they (the women) are sisters." },
+      { "ro": "Dumneavoastră aveți o casă frumoasă.", "en": "You (polite) have a beautiful house." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.pron.1", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "we", "answer": ["noi"] },
+      { "id": "ilr-01.g.pron.2", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "she", "answer": ["ea"] },
+      { "id": "ilr-01.g.pron.3", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "they (a man and a woman)", "answer": ["ei"] },
+      { "id": "ilr-01.g.pron.4", "kind": "choice", "instruction": "Pick the pronoun.", "prompt": "they (only women)", "options": ["ele", "ei", "voi"], "answer": ["ele"] },
+      { "id": "ilr-01.g.pron.5", "kind": "choice", "instruction": "Pick the pronoun.", "prompt": "you (polite)", "options": ["dumneavoastră", "tu", "voi"], "answer": ["dumneavoastră"] },
+      { "id": "ilr-01.g.pron.6", "kind": "choice", "instruction": "Pick the right verb form.", "prompt": "Dumneavoastră ___ două surori.", "options": ["aveți", "ai", "are"], "answer": ["aveți"] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.aux",
+     "title": "a fi and a avea (present)",
+     "rule": "a fi: sunt, ești, este (e), suntem, sunteți, sunt. a avea: am, ai, are, avem, aveți, au. Age uses a avea: Am treizeci de ani (I am thirty).",
+     "examples": [
+      { "ro": "Noi suntem din Suedia.", "en": "We are from Sweden." },
+      { "ro": "Ea are o pisică.", "en": "She has a cat." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.aux.1", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Noi ___ din Suedia. (a fi)", "answer": ["suntem"] },
+      { "id": "ilr-01.g.aux.2", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Tu ___ acasă? (a fi)", "answer": ["ești"] },
+      { "id": "ilr-01.g.aux.3", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Voi ___ prieteni. (a fi)", "answer": ["sunteți"] },
+      { "id": "ilr-01.g.aux.4", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Eu ___ o pisică. (a avea)", "answer": ["am"] },
+      { "id": "ilr-01.g.aux.5", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Ei ___ doi copii. (a avea)", "answer": ["au"] },
+      { "id": "ilr-01.g.aux.6", "kind": "type", "instruction": "Fill in the right form.", "prompt": "Ea ___ o mașină roșie. (a avea)", "answer": ["are"] },
+      { "id": "ilr-01.g.aux.7", "kind": "choice", "instruction": "Pick the right verb.", "prompt": "Câți ani ___?", "options": ["ai", "ești", "are"], "answer": ["ai"] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.neg",
+     "title": "Saying no: nu",
+     "rule": "Put nu right before the verb: Beau cafea → Nu beau cafea. With îmi place: Nu îmi place (often shortened to Nu-mi place).",
+     "examples": [
+      { "ro": "Nu avem mașină.", "en": "We don't have a car." },
+      { "ro": "Nu-mi place varza.", "en": "I don't like cabbage." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.neg.1", "kind": "type", "instruction": "Make it negative.", "prompt": "Eu beau cafea.", "answer": ["Eu nu beau cafea.", "Nu beau cafea."] },
+      { "id": "ilr-01.g.neg.2", "kind": "type", "instruction": "Make it negative.", "prompt": "Ea vrea supă.", "answer": ["Ea nu vrea supă."] },
+      { "id": "ilr-01.g.neg.3", "kind": "type", "instruction": "Make it negative.", "prompt": "Noi mergem la școală.", "answer": ["Noi nu mergem la școală.", "Nu mergem la școală."] },
+      { "id": "ilr-01.g.neg.4", "kind": "type", "instruction": "Make it negative.", "prompt": "Îmi place varza.", "answer": ["Nu îmi place varza.", "Nu-mi place varza."] },
+      { "id": "ilr-01.g.neg.5", "kind": "order", "instruction": "Build the sentence.", "prompt": "We don't have a car.", "answer": ["Noi nu avem mașină.", "Nu avem mașină."] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.sa",
+     "title": "vreau / pot / trebuie + să",
+     "rule": "After vreau (I want), trebuie (must, have to) and pot (can), the next verb usually takes să + the subjunctive: Vreau să mănânc. Trebuie să plec. Pot also works with the plain infinitive: Pot mânca = Pot să mănânc. Trebuie stays the same for every person: trebuie să beau, trebuie să bei.",
+     "examples": [
+      { "ro": "Vreau să merg la restaurant.", "en": "I want to go to the restaurant." },
+      { "ro": "El trebuie să bea apă.", "en": "He has to drink water." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.sa.1", "kind": "type", "instruction": "Fill in the verb after să.", "prompt": "Vreau să ___ ciocolată. (a mânca)", "answer": ["mănânc"] },
+      { "id": "ilr-01.g.sa.2", "kind": "type", "instruction": "Fill in the verb after să.", "prompt": "Tu vrei să ___ la restaurant? (a merge)", "answer": ["mergi"] },
+      { "id": "ilr-01.g.sa.3", "kind": "type", "instruction": "Fill in the verb after să.", "prompt": "El trebuie să ___ apă. (a bea)", "answer": ["bea"] },
+      { "id": "ilr-01.g.sa.4", "kind": "type", "instruction": "Fill in the verb after să.", "prompt": "Noi vrem să ___ legume. (a cumpăra)", "answer": ["cumpărăm"] },
+      { "id": "ilr-01.g.sa.5", "kind": "type", "instruction": "Fill in the verb after să.", "prompt": "Ei vor să ___ acum. (a dormi)", "answer": ["doarmă"] },
+      { "id": "ilr-01.g.sa.6", "kind": "choice", "instruction": "Pick the right form.", "prompt": "Voi ___ să plecați.", "options": ["trebuie", "trebuiți", "trebuim"], "answer": ["trebuie"] },
+      { "id": "ilr-01.g.sa.7", "kind": "order", "instruction": "Build the sentence.", "prompt": "I can eat chocolate now.", "answer": ["Pot să mănânc ciocolată acum.", "Pot mânca ciocolată acum."] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.art",
+     "title": "Articles: un / o / niște and the",
+     "rule": "Indefinite (a / some): un for masculine and neuter singular, o for feminine singular, niște for plural. The definite article (the) is added to the end: -ul (vecinul, telefonul), or -le after -e (câinele); feminine -ă → -a (casa), -e → -ea (cartea), -ie → -ia (bucătăria); plurals: masculine add -i (frații), feminine and neuter add -le (fetele, pixurile).",
+     "examples": [
+      { "ro": "un vecin → vecinul", "en": "a neighbour → the neighbour" },
+      { "ro": "o carte → cartea", "en": "a book → the book" },
+      { "ro": "niște pixuri → pixurile", "en": "some pens → the pens" }
+     ],
+     "items": [
+      { "id": "ilr-01.g.art.1", "kind": "choice", "instruction": "Pick un, o or niște.", "prompt": "___ casă", "options": ["o", "un", "niște"], "answer": ["o"] },
+      { "id": "ilr-01.g.art.2", "kind": "choice", "instruction": "Pick un, o or niște.", "prompt": "___ telefon", "options": ["un", "o", "niște"], "answer": ["un"] },
+      { "id": "ilr-01.g.art.3", "kind": "choice", "instruction": "Pick un, o or niște.", "prompt": "___ pixuri", "options": ["niște", "un", "o"], "answer": ["niște"] },
+      { "id": "ilr-01.g.art.4", "kind": "choice", "instruction": "Pick un, o or niște.", "prompt": "___ vecin", "options": ["un", "o", "niște"], "answer": ["un"] },
+      { "id": "ilr-01.g.art.5", "kind": "choice", "instruction": "Pick un, o or niște.", "prompt": "___ fete", "options": ["niște", "o", "un"], "answer": ["niște"] },
+      { "id": "ilr-01.g.art.6", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "casă", "answer": ["casa"] },
+      { "id": "ilr-01.g.art.7", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "vecin", "answer": ["vecinul"] },
+      { "id": "ilr-01.g.art.8", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "carte", "answer": ["cartea"] },
+      { "id": "ilr-01.g.art.9", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "câine", "answer": ["câinele"] },
+      { "id": "ilr-01.g.art.10", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "frați", "answer": ["frații"] },
+      { "id": "ilr-01.g.art.11", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "fete", "answer": ["fetele"] },
+      { "id": "ilr-01.g.art.12", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "pixuri", "answer": ["pixurile"] },
+      { "id": "ilr-01.g.art.13", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "școală", "answer": ["școala"] },
+      { "id": "ilr-01.g.art.14", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "scaun", "answer": ["scaunul"] },
+      { "id": "ilr-01.g.art.15", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "bucătărie", "answer": ["bucătăria"] },
+      { "id": "ilr-01.g.art.16", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "profesori", "answer": ["profesorii"] },
+      { "id": "ilr-01.g.art.17", "kind": "type", "instruction": "Add the definite article (the …).", "prompt": "culoare", "answer": ["culoarea"] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.pl",
+     "title": "Plurals",
+     "rule": "Common endings: masculine -i (profesor → profesori, câine → câini); feminine -e or -i (cameră → camere, pisică → pisici, floare → flori); neuter -uri or -e (pix → pixuri, dormitor → dormitoare). Some words change inside too: soră → surori, mână → mâini, fereastră → ferestre, frate → frați, baie → băi.",
+     "examples": [
+      { "ro": "o cameră → două camere", "en": "one room → two rooms" },
+      { "ro": "un balcon → două balcoane", "en": "one balcony → two balconies" }
+     ],
+     "items": [
+      { "id": "ilr-01.g.pl.1", "kind": "type", "instruction": "Make it plural.", "prompt": "mamă", "answer": ["mame"] },
+      { "id": "ilr-01.g.pl.2", "kind": "type", "instruction": "Make it plural.", "prompt": "frate", "answer": ["frați"] },
+      { "id": "ilr-01.g.pl.3", "kind": "type", "instruction": "Make it plural.", "prompt": "bunic", "answer": ["bunici"] },
+      { "id": "ilr-01.g.pl.4", "kind": "type", "instruction": "Make it plural.", "prompt": "câine", "answer": ["câini"] },
+      { "id": "ilr-01.g.pl.5", "kind": "type", "instruction": "Make it plural.", "prompt": "pisică", "answer": ["pisici"] },
+      { "id": "ilr-01.g.pl.6", "kind": "type", "instruction": "Make it plural.", "prompt": "portocală", "answer": ["portocale"] },
+      { "id": "ilr-01.g.pl.7", "kind": "type", "instruction": "Make it plural.", "prompt": "mână", "answer": ["mâini"] },
+      { "id": "ilr-01.g.pl.8", "kind": "type", "instruction": "Make it plural.", "prompt": "profesor", "answer": ["profesori"] },
+      { "id": "ilr-01.g.pl.9", "kind": "type", "instruction": "Make it plural.", "prompt": "elevă", "answer": ["eleve"] },
+      { "id": "ilr-01.g.pl.10", "kind": "type", "instruction": "Make it plural.", "prompt": "floare", "answer": ["flori"] },
+      { "id": "ilr-01.g.pl.11", "kind": "type", "instruction": "Make it plural.", "prompt": "cameră", "answer": ["camere"] },
+      { "id": "ilr-01.g.pl.12", "kind": "type", "instruction": "Make it plural.", "prompt": "fereastră", "answer": ["ferestre"] },
+      { "id": "ilr-01.g.pl.13", "kind": "type", "instruction": "Make it plural.", "prompt": "polițist", "answer": ["polițiști"] },
+      { "id": "ilr-01.g.pl.14", "kind": "type", "instruction": "Make it plural.", "prompt": "ochi", "answer": ["ochi"] },
+      { "id": "ilr-01.g.pl.15", "kind": "type", "instruction": "Make it plural.", "prompt": "weekend", "answer": ["weekenduri"] },
+      { "id": "ilr-01.g.pl.16", "kind": "type", "instruction": "Make it plural.", "prompt": "dormitor", "answer": ["dormitoare"] },
+      { "id": "ilr-01.g.pl.17", "kind": "type", "instruction": "Make it plural.", "prompt": "baie", "answer": ["băi"] },
+      { "id": "ilr-01.g.pl.18", "kind": "type", "instruction": "Make it plural.", "prompt": "balcon", "answer": ["balcoane"] },
+      { "id": "ilr-01.g.pl.19", "kind": "type", "instruction": "Make it plural.", "prompt": "bucătărie", "answer": ["bucătării"] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.like",
+     "title": "Îmi place / îmi plac",
+     "rule": "To say you like something: îmi place + one thing (îmi place ciocolata), îmi plac + several things (îmi plac ciupercile). The thing you like usually takes the definite article. Îmi place să + verb: Îmi place să dorm.",
+     "examples": [
+      { "ro": "Îmi place peștele.", "en": "I like fish." },
+      { "ro": "Nu-mi plac chiftelele.", "en": "I don't like meatballs." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.like.1", "kind": "choice", "instruction": "place or plac?", "prompt": "Îmi ___ peștele.", "options": ["place", "plac"], "answer": ["place"] },
+      { "id": "ilr-01.g.like.2", "kind": "choice", "instruction": "place or plac?", "prompt": "Îmi ___ ciupercile.", "options": ["place", "plac"], "answer": ["plac"] },
+      { "id": "ilr-01.g.like.3", "kind": "choice", "instruction": "place or plac?", "prompt": "Nu îmi ___ chiftelele.", "options": ["place", "plac"], "answer": ["plac"] },
+      { "id": "ilr-01.g.like.4", "kind": "type", "instruction": "place or plac?", "prompt": "Îmi ___ cartofii prăjiți.", "answer": ["plac"] },
+      { "id": "ilr-01.g.like.5", "kind": "type", "instruction": "Fill in the verb after să.", "prompt": "Îmi place să ___. (a dormi)", "answer": ["dorm"] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.time",
+     "title": "Telling the time",
+     "rule": "Este ora + the hour, with feminine numbers: ora două, ora douăsprezece. Minutes after the hour: și (ora opt și zece). Half past: și jumătate. Quarter: un sfert. Minutes before the next hour: fără (ora șapte fără zece = 6:50). From 20 on, numbers take de: douăzeci de minute.",
+     "examples": [
+      { "ro": "Este ora nouă și jumătate.", "en": "It is half past nine." },
+      { "ro": "Este ora șapte fără un sfert.", "en": "It is quarter to seven." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.time.1", "kind": "type", "instruction": "Write the time in words, starting with ora.", "prompt": "9:00", "answer": ["ora nouă", "nouă"] },
+      { "id": "ilr-01.g.time.2", "kind": "type", "instruction": "Write the time in words, starting with ora.", "prompt": "8:30", "answer": ["ora opt și jumătate", "opt și jumătate", "ora opt și treizeci", "opt și treizeci"] },
+      { "id": "ilr-01.g.time.3", "kind": "type", "instruction": "Write the time in words, starting with ora.", "prompt": "5:15", "answer": ["ora cinci și un sfert", "cinci și un sfert", "ora cinci și cincisprezece", "cinci și cincisprezece"] },
+      { "id": "ilr-01.g.time.4", "kind": "type", "instruction": "Write the time in words, starting with ora.", "prompt": "6:50", "answer": ["ora șapte fără zece", "șapte fără zece", "ora șase și cincizeci", "șase și cincizeci"] },
+      { "id": "ilr-01.g.time.5", "kind": "type", "instruction": "Write the time in words, starting with ora.", "prompt": "10:45", "answer": ["ora unsprezece fără un sfert", "unsprezece fără un sfert", "ora zece și patruzeci și cinci", "zece și patruzeci și cinci"] },
+      { "id": "ilr-01.g.time.6", "kind": "choice", "instruction": "Pick the right way to say it.", "prompt": "2:00", "options": ["ora două", "ora doi"], "answer": ["ora două"] },
+      { "id": "ilr-01.g.time.7", "kind": "choice", "instruction": "Pick the right way to say it.", "prompt": "12:20", "options": ["ora douăsprezece și douăzeci", "ora doisprezece și douăzeci"], "answer": ["ora douăsprezece și douăzeci"] }
+     ]
+    },
+    {
+     "id": "ilr-01.g.sent",
+     "title": "Putting it together",
+     "rule": "Romanian word order is usually like English: subject – verb – object. The subject pronoun is often left out (Am o casă = I have a house). Adjectives normally come after the noun: o casă mare, anotimpul preferat.",
+     "examples": [
+      { "ro": "Am o casă mare.", "en": "I have a big house." },
+      { "ro": "Culoarea mea preferată este verde.", "en": "My favourite colour is green." }
+     ],
+     "items": [
+      { "id": "ilr-01.g.sent.1", "kind": "order", "instruction": "Build the sentence.", "prompt": "I have a big house with three bedrooms.", "answer": ["Am o casă mare cu trei dormitoare."] },
+      { "id": "ilr-01.g.sent.2", "kind": "order", "instruction": "Build the sentence.", "prompt": "We go to school by bus.", "answer": ["Mergem la școală cu autobuzul."] },
+      { "id": "ilr-01.g.sent.3", "kind": "order", "instruction": "Build the sentence.", "prompt": "I would like a coffee, please.", "answer": ["Aș vrea o cafea, vă rog."] },
+      { "id": "ilr-01.g.sent.4", "kind": "order", "instruction": "Build the sentence.", "prompt": "She has two brothers and a sister.", "answer": ["Ea are doi frați și o soră."] },
+      { "id": "ilr-01.g.sent.5", "kind": "order", "instruction": "Build the sentence.", "prompt": "I like mushrooms, but I don't like cabbage.", "answer": ["Îmi plac ciupercile, dar nu îmi place varza."] },
+      { "id": "ilr-01.g.sent.6", "kind": "order", "instruction": "Build the sentence.", "prompt": "My favourite season is summer.", "answer": ["Anotimpul meu preferat este vara."] }
+     ]
+    }
+   ]
+  }
+ ]
+}
