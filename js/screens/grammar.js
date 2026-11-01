@@ -17,11 +17,11 @@ function spoken(item) {
 
 // Least-practiced items first, mastered ones last, so each round focuses on what's new.
 function pickRound(all) {
-  const weight = ({ it }) => {
-    const cell = state.mastery.get(grammarKey(it));
-    return (cellMastered(cell) ? 1000 : 0) + (cell?.count || 0) + Math.random();
-  };
-  return shuffle([...all].sort((a, b) => weight(a) - weight(b)).slice(0, ROUND));
+  const weighted = all.map(entry => {
+    const cell = state.mastery.get(grammarKey(entry.it));
+    return { entry, w: (cellMastered(cell) ? 1000 : 0) + (cell?.count || 0) + Math.random() };
+  });
+  return shuffle(weighted.sort((a, b) => a.w - b.w).slice(0, ROUND).map(x => x.entry));
 }
 
 /** @param {{title:string, lessons:object[], back:string}} scope */
@@ -173,7 +173,7 @@ function renderItem(stage, entry, ctx) {
   stage.append(h('div', { class: 'ex-card pop-in' },
     h('div', { class: 'ex-kind' }, '🧠 ', g.title),
     it.instruction ? h('div', { class: 'instruction' }, it.instruction) : null,
-    h('div', { class: `prompt ${it.kind === 'order' ? '' : 'ro'}` }, it.prompt),
+    h('div', { class: `prompt ${it.kind === 'order' || it.promptLang === 'en' ? '' : 'ro'}` }, it.prompt),
     h('button', {
       class: 'btn link rule-toggle', type: 'button',
       onclick: () => { ruleBox.classList.toggle('hidden'); animate(ruleBox, 'flip-in'); },

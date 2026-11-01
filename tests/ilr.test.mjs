@@ -78,6 +78,7 @@ test('grammar items are answerable', () => {
       for (const it of g.items) {
         assert.ok(KINDS.includes(it.kind), `${it.id}: kind`);
         assert.ok(it.prompt, `${it.id}: prompt`);
+        if (it.promptLang) assert.ok(['en', 'ro'].includes(it.promptLang), `${it.id}: promptLang`);
         assert.ok(it.answer?.length && it.answer.every(Boolean), `${it.id}: answer`);
         assert.equal(new Set(it.answer.map(norm)).size, it.answer.length, `${it.id}: duplicate answer`);
         if (it.kind === 'choice') {

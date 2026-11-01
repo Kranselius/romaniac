@@ -7,7 +7,6 @@ import { renderPractice } from './practice.js';
 import { renderGrammar, grammarKey } from './grammar.js';
 
 const RECENT = 2; // "Review before next class" covers the last two lessons
-const GENDER = { m: 'm', f: 'f', n: 'n' };
 
 const lessonName = l => `Lecția ${l.number}`;
 
@@ -161,7 +160,7 @@ export function renderIlrSheet(root, id) {
     group('Phrases and words', rest, c => h('tr', {},
       h('td', { class: 'ro' }, h('span', say(c.ro[0]), c.ro[0])), h('td', {}, c.en[0]))),
     group('Nouns', nouns, c => h('tr', {},
-      h('td', { class: 'ro' }, h('span', say(c.ro[0]), c.ro[0]), ' ', h('span', { class: `chip g-${c.gender}` }, GENDER[c.gender])),
+      h('td', { class: 'ro' }, h('span', say(c.ro[0]), c.ro[0]), ' ', h('span', { class: `chip g-${c.gender}` }, c.gender)),
       h('td', {}, c.en[0], h('div', { class: 'muted small' }, [c.def, c.plural && `pl. ${c.plural}`].filter(Boolean).join(' · '))))),
     group('Adjectives', adjs, c => h('tr', {},
       h('td', { class: 'ro' }, h('span', say(c.ro[0]), c.ro[0])),
@@ -187,4 +186,3 @@ export function renderIlrGrammar(root, id) {
   renderGrammar(root, { title: scope.title, lessons: scope.lessons, back: `#/ilr/${id}` });
 }
 
-export const lessonsForVerb = verbId => state.lessons.filter(l => (l.verbs || []).includes(verbId));

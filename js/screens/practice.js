@@ -29,7 +29,7 @@ function plan(scope) {
   return {
     due: due.slice(0, nRev),
     fresh: fresh.slice(0, nNew),
-    learned: cards.filter(c => c.srs.state === 'review'),
+    learned: cards.filter(c => c.srs.state === 'review' && (scope || !c.ilr || s.ilrInReviews)),
   };
 }
 

@@ -138,11 +138,11 @@
       { "ro": "Dumneavoastră aveți o casă frumoasă.", "en": "You (polite) have a beautiful house." }
      ],
      "items": [
-      { "id": "ilr-01.g.pron.1", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "we", "answer": ["noi"] },
-      { "id": "ilr-01.g.pron.2", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "she", "answer": ["ea"] },
-      { "id": "ilr-01.g.pron.3", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "they (a man and a woman)", "answer": ["ei"] },
-      { "id": "ilr-01.g.pron.4", "kind": "choice", "instruction": "Pick the pronoun.", "prompt": "they (only women)", "options": ["ele", "ei", "voi"], "answer": ["ele"] },
-      { "id": "ilr-01.g.pron.5", "kind": "choice", "instruction": "Pick the pronoun.", "prompt": "you (polite)", "options": ["dumneavoastră", "tu", "voi"], "answer": ["dumneavoastră"] },
+      { "id": "ilr-01.g.pron.1", "promptLang": "en", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "we", "answer": ["noi"] },
+      { "id": "ilr-01.g.pron.2", "promptLang": "en", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "she", "answer": ["ea"] },
+      { "id": "ilr-01.g.pron.3", "promptLang": "en", "kind": "type", "instruction": "Write the pronoun in Romanian.", "prompt": "they (a man and a woman)", "answer": ["ei"] },
+      { "id": "ilr-01.g.pron.4", "promptLang": "en", "kind": "choice", "instruction": "Pick the pronoun.", "prompt": "they (only women)", "options": ["ele", "ei", "voi"], "answer": ["ele"] },
+      { "id": "ilr-01.g.pron.5", "promptLang": "en", "kind": "choice", "instruction": "Pick the pronoun.", "prompt": "you (polite)", "options": ["dumneavoastră", "tu", "voi"], "answer": ["dumneavoastră"] },
       { "id": "ilr-01.g.pron.6", "kind": "choice", "instruction": "Pick the right verb form.", "prompt": "Dumneavoastră ___ două surori.", "options": ["aveți", "ai", "are"], "answer": ["aveți"] }
      ]
     },
@@ -276,7 +276,7 @@
     {
      "id": "ilr-01.g.time",
      "title": "Telling the time",
-     "rule": "Este ora + the hour, with feminine numbers: ora două, ora douăsprezece. Minutes after the hour: și (ora opt și zece). Half past: și jumătate. Quarter: un sfert. Minutes before the next hour: fără (ora șapte fără zece = 6:50). From 20 on, numbers take de: douăzeci de minute.",
+     "rule": "Este ora + the hour, with feminine numbers: ora două, ora douăsprezece (but ora unu). Minutes after the hour: și (ora opt și zece). Half past: și jumătate. Quarter: un sfert. Minutes before the next hour: fără (ora șapte fără zece = 6:50). From 20 on, numbers take de: douăzeci de minute.",
      "examples": [
       { "ro": "Este ora nouă și jumătate.", "en": "It is half past nine." },
       { "ro": "Este ora șapte fără un sfert.", "en": "It is quarter to seven." }
