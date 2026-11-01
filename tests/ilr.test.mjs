@@ -38,12 +38,13 @@ test('every id is unique and prefixed with its lesson', () => {
   }
 });
 
-test('cards are complete; references point at existing starter cards', () => {
-  for (const l of ilr.lessons) {
+test('cards are complete; references point at starter cards or earlier lessons', () => {
+  const earlier = new Set();
+  for (const l of [...ilr.lessons].sort((a, b) => a.number - b.number)) {
     const refs = new Set();
     for (const c of l.cards) {
       if (c.ref) {
-        assert.ok(vocabIds.has(c.ref), `${l.id}: unknown ref ${c.ref}`);
+        assert.ok(vocabIds.has(c.ref) || earlier.has(c.ref), `${l.id}: unknown ref ${c.ref} (starter card or earlier lesson only)`);
         assert.ok(!refs.has(c.ref), `${l.id}: ${c.ref} referenced twice`);
         refs.add(c.ref);
         continue;
@@ -60,6 +61,18 @@ test('cards are complete; references point at existing starter cards', () => {
         assert.equal(c.forms?.length, 4, `${c.id}: forms`);
         assert.equal(c.forms[0], c.ro[0], `${c.id}: first form is the main form`);
       }
+    }
+    for (const c of l.cards) if (!c.ref) earlier.add(c.id);
+  }
+});
+
+test('no lesson card duplicates a starter card or an earlier lesson card (use a ref)', () => {
+  const seen = new Map(vocab.cards.map(c => [`${norm(c.ro[0])}|${c.type}`, c.id]));
+  for (const l of [...ilr.lessons].sort((a, b) => a.number - b.number)) {
+    for (const c of l.cards.filter(c => !c.ref)) {
+      const key = `${norm(c.ro[0])}|${c.type}`;
+      assert.ok(!seen.has(key), `${c.id} duplicates ${seen.get(key)}: use { "ref": "${seen.get(key)}" }`);
+      seen.set(key, c.id);
     }
   }
 });
@@ -97,7 +110,7 @@ test('grammar items are answerable', () => {
 test('modern orthography in lesson content', () => {
   const romanian = ilr.lessons.flatMap(l => [
     ...l.cards.filter(c => !c.ref).flatMap(c => [...c.ro, c.def, c.plural, ...(c.forms || [])]),
-    ...(l.grammar || []).flatMap(g => [...g.examples.map(e => e.ro), ...g.items.flatMap(i => [...i.answer, ...(i.options || [])])]),
+    ...(l.grammar || []).flatMap(g => [...g.examples.map(e => e.ro), ...g.items.flatMap(i => [...i.answer, ...(i.options || []), i.say])]),
   ]).filter(Boolean);
   for (const s of romanian) {
     assert.doesNotMatch(s, /[şţŞŢ]/, `cedilla in "${s}"`);

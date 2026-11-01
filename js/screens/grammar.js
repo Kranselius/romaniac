@@ -9,8 +9,9 @@ import { cellMastered } from '../progress.js';
 const ROUND = 10;
 export const grammarKey = item => `ilr|${item.id}`;
 
-// The Romanian to read aloud after an item: the filled-in sentence, or the answer itself.
+// The Romanian to read aloud after an item: an explicit `say`, the filled-in sentence, or the answer.
 function spoken(item) {
+  if (item.say) return item.say;
   if (!item.prompt.includes('___')) return item.answer[0];
   return item.prompt.replace(/\s*\([^)]*\)\s*$/, '').replace('___', item.answer[0]);
 }

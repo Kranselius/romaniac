@@ -91,14 +91,16 @@ async function mergeContent(contentCards) {
   await db.putMany('cards', changed);
 }
 
-// Words added on the phone with "Add to lesson" are custom cards in that lesson's deck. When a
-// lesson file later ships the same word, the shipped card takes over (with the progress, if it
-// is still new) and the phone's copy is retired.
+// Words added on the phone with "Add to lesson" are custom cards in that lesson's deck. When the
+// lesson file later contains the same word (its own card or a linked one), that card takes over
+// (with the progress, if it is still new) and the phone's copy is retired.
 async function foldQuickAdds() {
   const changed = [];
   for (const custom of state.cards.values()) {
     if (!custom.custom || !custom.ilr || custom.retired) continue;
-    const shipped = [...state.cards.values()].find(c => !c.custom && !c.retired && c.deck === custom.deck && norm(c.ro[0]) === norm(custom.ro[0]));
+    const lesson = lessonById(custom.deck);
+    const candidates = lesson ? lessonCards(lesson).filter(c => !c.custom) : [];
+    const shipped = candidates.find(c => norm(c.ro[0]) === norm(custom.ro[0]));
     if (!shipped) continue;
     if (shipped.srs.state === 'new' && custom.srs.state !== 'new') {
       Object.assign(shipped, { srs: custom.srs, history: custom.history, correctDays: custom.correctDays, introduced: custom.introduced });

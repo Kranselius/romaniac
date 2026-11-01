@@ -309,6 +309,193 @@
      ]
     }
    ]
+  },
+  {
+   "id": "ilr-02",
+   "number": 2,
+   "title": "Genul substantivelor",
+   "topic": "Noun gender: masculine, feminine, neuter",
+   "cards": [
+    { "ref": "fam.mama" }, { "ref": "fam.tata" }, { "ref": "fam.sora" }, { "ref": "fam.frate" },
+    { "ref": "ilr-01.fata" }, { "ref": "ilr-01.profesor" }, { "ref": "ilr-01.profesoara" },
+    { "ref": "ilr-01.elev" }, { "ref": "ilr-01.eleva" }, { "ref": "ilr-01.pisica" }, { "ref": "ilr-01.caine" },
+    { "ref": "ilr-01.carte" }, { "ref": "ilr-01.floare" }, { "ref": "ilr-01.pix" }, { "ref": "ilr-01.telefon" },
+    { "ref": "ilr-01.scaun" }, { "ref": "ilr-01.ochi" }, { "ref": "ilr-01.nas" }, { "ref": "ilr-01.mana" },
+    { "ref": "time.zi" }, { "ref": "food.cafea" },
+
+    { "id": "ilr-02.coleg", "type": "noun", "ro": ["coleg"], "en": ["colleague (male)", "colleague", "classmate"], "gender": "m", "plural": "colegi", "def": "colegul" },
+    { "id": "ilr-02.colega", "type": "noun", "ro": ["colegă"], "en": ["colleague (female)", "colleague", "classmate"], "gender": "f", "plural": "colege", "def": "colega" },
+    { "id": "ilr-02.student", "type": "noun", "ro": ["student"], "en": ["student (male)", "student"], "gender": "m", "plural": "studenți", "def": "studentul" },
+    { "id": "ilr-02.studenta", "type": "noun", "ro": ["studentă"], "en": ["student (female)", "student"], "gender": "f", "plural": "studente", "def": "studenta" },
+    { "id": "ilr-02.baiat", "type": "noun", "ro": ["băiat"], "en": ["boy"], "gender": "m", "plural": "băieți", "def": "băiatul" },
+    { "id": "ilr-02.barbat", "type": "noun", "ro": ["bărbat"], "en": ["man"], "gender": "m", "plural": "bărbați", "def": "bărbatul" },
+    { "id": "ilr-02.femeie", "type": "noun", "ro": ["femeie"], "en": ["woman"], "gender": "f", "plural": "femei", "def": "femeia" },
+    { "id": "ilr-02.motan", "type": "noun", "ro": ["motan"], "en": ["tomcat", "male cat"], "gender": "m", "plural": "motani", "def": "motanul" },
+    { "id": "ilr-02.animal", "type": "noun", "ro": ["animal"], "en": ["animal"], "gender": "n", "plural": "animale", "def": "animalul" },
+
+    { "id": "ilr-02.creion", "type": "noun", "ro": ["creion"], "en": ["pencil"], "gender": "n", "plural": "creioane", "def": "creionul" },
+    { "id": "ilr-02.caiet", "type": "noun", "ro": ["caiet"], "en": ["notebook", "exercise book"], "gender": "n", "plural": "caiete", "def": "caietul" },
+    { "id": "ilr-02.stilou", "type": "noun", "ro": ["stilou"], "en": ["fountain pen"], "gender": "n", "plural": "stilouri", "def": "stiloul" },
+    { "id": "ilr-02.penar", "type": "noun", "ro": ["penar"], "en": ["pencil case"], "gender": "n", "plural": "penare", "def": "penarul" },
+    { "id": "ilr-02.dictionar", "type": "noun", "ro": ["dicționar"], "en": ["dictionary"], "gender": "n", "plural": "dicționare", "def": "dicționarul" },
+    { "id": "ilr-02.cos-de-gunoi", "type": "noun", "ro": ["coș de gunoi"], "en": ["bin", "rubbish bin", "trash can"], "gender": "n", "plural": "coșuri de gunoi", "def": "coșul de gunoi" },
+    { "id": "ilr-02.tablou", "type": "noun", "ro": ["tablou"], "en": ["painting", "picture"], "gender": "n", "plural": "tablouri", "def": "tabloul" },
+    { "id": "ilr-02.lectie", "type": "noun", "ro": ["lecție"], "en": ["lesson"], "gender": "f", "plural": "lecții", "def": "lecția" },
+    { "id": "ilr-02.exercitiu", "type": "noun", "ro": ["exercițiu"], "en": ["exercise"], "gender": "n", "plural": "exerciții", "def": "exercițiul" },
+    { "id": "ilr-02.banca", "type": "noun", "ro": ["bancă"], "en": ["bank, bench", "bank", "bench"], "gender": "f", "plural": "bănci", "def": "banca" },
+    { "id": "ilr-02.radio", "type": "noun", "ro": ["radio"], "en": ["radio"], "gender": "n", "plural": "radiouri", "def": "radioul" },
+    { "id": "ilr-02.nume", "type": "noun", "ro": ["nume"], "en": ["name"], "gender": "n", "plural": "nume", "def": "numele" },
+    { "id": "ilr-02.idee", "type": "noun", "ro": ["idee"], "en": ["idea"], "gender": "f", "plural": "idei", "def": "ideea" },
+    { "id": "ilr-02.obicei", "type": "noun", "ro": ["obicei"], "en": ["habit, custom", "habit", "custom"], "gender": "n", "plural": "obiceiuri", "def": "obiceiul" },
+    { "id": "ilr-02.punct", "type": "noun", "ro": ["punct"], "en": ["point, dot", "point", "dot", "full stop"], "gender": "n", "plural": "puncte", "def": "punctul" },
+    { "id": "ilr-02.poveste", "type": "noun", "ro": ["poveste"], "en": ["story"], "gender": "f", "plural": "povești", "def": "povestea" },
+
+    { "id": "ilr-02.usa", "type": "noun", "ro": ["ușă"], "en": ["door"], "gender": "f", "plural": "uși", "def": "ușa" },
+    { "id": "ilr-02.perete", "type": "noun", "ro": ["perete"], "en": ["wall"], "gender": "m", "plural": "pereți", "def": "peretele" },
+    { "id": "ilr-02.dulap", "type": "noun", "ro": ["dulap"], "en": ["wardrobe, cupboard", "wardrobe", "cupboard"], "gender": "n", "plural": "dulapuri", "def": "dulapul" },
+    { "id": "ilr-02.frigider", "type": "noun", "ro": ["frigider"], "en": ["fridge", "refrigerator"], "gender": "n", "plural": "frigidere", "def": "frigiderul" },
+    { "id": "ilr-02.birou", "type": "noun", "ro": ["birou"], "en": ["desk, office", "desk", "office"], "gender": "n", "plural": "birouri", "def": "biroul" },
+    { "id": "ilr-02.cladire", "type": "noun", "ro": ["clădire"], "en": ["building"], "gender": "f", "plural": "clădiri", "def": "clădirea" },
+    { "id": "ilr-02.etaj", "type": "noun", "ro": ["etaj"], "en": ["floor, storey", "floor", "storey", "story"], "gender": "n", "plural": "etaje", "def": "etajul" },
+    { "id": "ilr-02.hotel", "type": "noun", "ro": ["hotel"], "en": ["hotel"], "gender": "n", "plural": "hoteluri", "def": "hotelul" },
+    { "id": "ilr-02.teatru", "type": "noun", "ro": ["teatru"], "en": ["theatre", "theater"], "gender": "n", "plural": "teatre", "def": "teatrul" },
+    { "id": "ilr-02.universitate", "type": "noun", "ro": ["universitate"], "en": ["university"], "gender": "f", "plural": "universități", "def": "universitatea" },
+    { "id": "ilr-02.tramvai", "type": "noun", "ro": ["tramvai"], "en": ["tram"], "gender": "n", "plural": "tramvaie", "def": "tramvaiul" },
+    { "id": "ilr-02.pantof", "type": "noun", "ro": ["pantof"], "en": ["shoe"], "gender": "m", "plural": "pantofi", "def": "pantoful" },
+
+    { "id": "ilr-02.cap", "type": "noun", "ro": ["cap"], "en": ["head"], "gender": "n", "plural": "capete", "def": "capul" },
+    { "id": "ilr-02.picior", "type": "noun", "ro": ["picior"], "en": ["leg, foot", "leg", "foot"], "gender": "n", "plural": "picioare", "def": "piciorul" },
+    { "id": "ilr-02.deget", "type": "noun", "ro": ["deget"], "en": ["finger, toe", "finger", "toe"], "gender": "n", "plural": "degete", "def": "degetul" },
+    { "id": "ilr-02.genunchi", "type": "noun", "ro": ["genunchi"], "en": ["knee"], "gender": "m", "plural": "genunchi", "def": "genunchiul" },
+
+    { "id": "ilr-02.copac", "type": "noun", "ro": ["copac"], "en": ["tree"], "gender": "m", "plural": "copaci", "def": "copacul" },
+    { "id": "ilr-02.planta", "type": "noun", "ro": ["plantă"], "en": ["plant"], "gender": "f", "plural": "plante", "def": "planta" },
+    { "id": "ilr-02.frunza", "type": "noun", "ro": ["frunză"], "en": ["leaf"], "gender": "f", "plural": "frunze", "def": "frunza" },
+    { "id": "ilr-02.stea", "type": "noun", "ro": ["stea"], "en": ["star"], "gender": "f", "plural": "stele", "def": "steaua" },
+    { "id": "ilr-02.lamaie", "type": "noun", "ro": ["lămâie"], "en": ["lemon"], "gender": "f", "plural": "lămâi", "def": "lămâia" },
+    { "id": "ilr-02.ananas", "type": "noun", "ro": ["ananas"], "en": ["pineapple"], "gender": "m", "plural": "ananași", "def": "ananasul" },
+    { "id": "ilr-02.cireasa", "type": "noun", "ro": ["cireașă"], "en": ["cherry"], "gender": "f", "plural": "cireșe", "def": "cireașa" },
+    { "id": "ilr-02.capsuna", "type": "noun", "ro": ["căpșună"], "en": ["strawberry"], "gender": "f", "plural": "căpșuni", "def": "căpșuna" },
+    { "id": "ilr-02.piersica", "type": "noun", "ro": ["piersică"], "en": ["peach"], "gender": "f", "plural": "piersici", "def": "piersica" },
+    { "id": "ilr-02.caisa", "type": "noun", "ro": ["caisă"], "en": ["apricot"], "gender": "f", "plural": "caise", "def": "caisa" },
+    { "id": "ilr-02.unt", "type": "noun", "ro": ["unt"], "en": ["butter"], "gender": "n", "plural": "unturi", "def": "untul" },
+    { "id": "ilr-02.ulei", "type": "noun", "ro": ["ulei"], "en": ["oil"], "gender": "n", "plural": "uleiuri", "def": "uleiul" },
+
+    { "ref": "adj.frumos" }
+   ],
+   "verbs": [],
+   "grammar": [
+    {
+     "id": "ilr-02.g.end",
+     "title": "Gender from the ending",
+     "rule": "Romanian has three genders: masculin, feminin, neutru. Ending in -ă: feminine and singular (except tată). Ending in -ea, -ie, -ee, -a: feminine (cafea, lecție, idee). Ending in -e: usually feminine (floare), but can be masculine (frate, câine) or neuter (nume). Consonant or -u: masculine or neuter (use the un – două test). Ending in -i: any gender (ochi m, obicei n, zi f). Ending in -o, usually foreign words: neuter (radio). People and animals usually follow their natural gender.",
+     "examples": [
+      { "ro": "o frunză, o cafea, o lecție", "en": "feminine" },
+      { "ro": "un băiat, un pantof, un frate", "en": "masculine" },
+      { "ro": "un caiet, un stilou, un radio", "en": "neuter" }
+     ],
+     "items": [
+      { "id": "ilr-02.g.end.1", "kind": "choice", "say": "o frunză", "instruction": "Which gender?", "prompt": "frunză", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-02.g.end.2", "kind": "choice", "say": "un caiet", "instruction": "Which gender?", "prompt": "caiet", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-02.g.end.3", "kind": "choice", "say": "un băiat", "instruction": "Which gender?", "prompt": "băiat", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-02.g.end.4", "kind": "choice", "say": "un stilou", "instruction": "Which gender?", "prompt": "stilou", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-02.g.end.5", "kind": "choice", "say": "o cafea", "instruction": "Which gender?", "prompt": "cafea", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-02.g.end.6", "kind": "choice", "say": "o femeie", "instruction": "Which gender?", "prompt": "femeie", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-02.g.end.7", "kind": "choice", "say": "un radio", "instruction": "Which gender?", "prompt": "radio", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-02.g.end.8", "kind": "choice", "say": "un perete", "instruction": "Which gender?", "prompt": "perete", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-02.g.end.9", "kind": "choice", "say": "un nume", "instruction": "Which gender?", "prompt": "nume", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-02.g.end.10", "kind": "choice", "say": "un tată", "instruction": "Which gender?", "prompt": "tată", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-02.g.end.11", "kind": "choice", "say": "o lecție", "instruction": "Which gender?", "prompt": "lecție", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-02.g.end.12", "kind": "choice", "say": "un ochi", "instruction": "Which gender?", "prompt": "ochi", "options": ["masculin", "feminin", "neutru"], "answer": ["masculin"] },
+      { "id": "ilr-02.g.end.13", "kind": "choice", "say": "un telefon", "instruction": "Which gender?", "prompt": "telefon", "options": ["masculin", "feminin", "neutru"], "answer": ["neutru"] },
+      { "id": "ilr-02.g.end.14", "kind": "choice", "say": "o idee", "instruction": "Which gender?", "prompt": "idee", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] },
+      { "id": "ilr-02.g.end.15", "kind": "choice", "say": "o zi", "instruction": "Which gender?", "prompt": "zi", "options": ["masculin", "feminin", "neutru"], "answer": ["feminin"] }
+     ]
+    },
+    {
+     "id": "ilr-02.g.test",
+     "title": "The un – două test",
+     "rule": "Say “one” and “two” with the noun. Masculine: un … doi (un pantof, doi pantofi). Feminine: o … două (o plantă, două plante). Neuter: un … două — it behaves like a masculine noun in the singular and like a feminine noun in the plural (un caiet, două caiete).",
+     "examples": [
+      { "ro": "un copac – doi copaci", "en": "masculine" },
+      { "ro": "o zi – două zile", "en": "feminine" },
+      { "ro": "un hotel – două hoteluri", "en": "neuter" }
+     ],
+     "items": [
+      { "id": "ilr-02.g.test.1", "kind": "choice", "instruction": "doi or două?", "prompt": "___ caiete", "options": ["două", "doi"], "answer": ["două"] },
+      { "id": "ilr-02.g.test.2", "kind": "choice", "instruction": "doi or două?", "prompt": "___ pantofi", "options": ["doi", "două"], "answer": ["doi"] },
+      { "id": "ilr-02.g.test.3", "kind": "choice", "instruction": "doi or două?", "prompt": "___ scaune", "options": ["două", "doi"], "answer": ["două"] },
+      { "id": "ilr-02.g.test.4", "kind": "choice", "instruction": "doi or două?", "prompt": "___ bărbați", "options": ["doi", "două"], "answer": ["doi"] },
+      { "id": "ilr-02.g.test.5", "kind": "choice", "instruction": "doi or două?", "prompt": "___ hoteluri", "options": ["două", "doi"], "answer": ["două"] },
+      { "id": "ilr-02.g.test.6", "kind": "choice", "instruction": "doi or două?", "prompt": "___ copaci", "options": ["doi", "două"], "answer": ["doi"] },
+      { "id": "ilr-02.g.test.7", "kind": "type", "instruction": "Now say two of them.", "prompt": "un etaj", "answer": ["două etaje"] },
+      { "id": "ilr-02.g.test.8", "kind": "type", "instruction": "Now say two of them.", "prompt": "un băiat", "answer": ["doi băieți"] },
+      { "id": "ilr-02.g.test.9", "kind": "type", "instruction": "Now say two of them.", "prompt": "o plantă", "answer": ["două plante"] },
+      { "id": "ilr-02.g.test.10", "kind": "type", "instruction": "Now say two of them.", "prompt": "un tramvai", "answer": ["două tramvaie"] },
+      { "id": "ilr-02.g.test.11", "kind": "type", "instruction": "Now say two of them.", "prompt": "un nume", "answer": ["două nume"] },
+      { "id": "ilr-02.g.test.12", "kind": "type", "instruction": "Now say two of them.", "prompt": "o stea", "answer": ["două stele"] }
+     ]
+    },
+    {
+     "id": "ilr-02.g.pron",
+     "title": "Replacing a noun with el, ea, ei, ele",
+     "rule": "Masculine nouns become el (singular) and ei (plural). Feminine nouns become ea and ele. Neuter nouns mix the two: el in the singular, ele in the plural.",
+     "examples": [
+      { "ro": "Pantoful e nou. El e nou. Pantofii sunt noi. Ei sunt noi.", "en": "masculine: el / ei" },
+      { "ro": "Caietul e nou. El e nou. Caietele sunt noi. Ele sunt noi.", "en": "neuter: el / ele" }
+     ],
+     "items": [
+      { "id": "ilr-02.g.pron.1", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "caietul", "options": ["el", "ea"], "answer": ["el"] },
+      { "id": "ilr-02.g.pron.2", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "caietele", "options": ["ele", "ei"], "answer": ["ele"] },
+      { "id": "ilr-02.g.pron.3", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "băieții", "options": ["ei", "ele"], "answer": ["ei"] },
+      { "id": "ilr-02.g.pron.4", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "frunza", "options": ["ea", "el"], "answer": ["ea"] },
+      { "id": "ilr-02.g.pron.5", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "pantofii", "options": ["ei", "ele"], "answer": ["ei"] },
+      { "id": "ilr-02.g.pron.6", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "scaunele", "options": ["ele", "ei"], "answer": ["ele"] },
+      { "id": "ilr-02.g.pron.7", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "stiloul", "options": ["el", "ea"], "answer": ["el"] },
+      { "id": "ilr-02.g.pron.8", "kind": "choice", "instruction": "Which pronoun replaces it?", "prompt": "colegele", "options": ["ele", "ei"], "answer": ["ele"] }
+     ]
+    },
+    {
+     "id": "ilr-02.g.adj",
+     "title": "Adjectives agree and come after the noun",
+     "rule": "The adjective normally comes after the noun: o fată frumoasă. It takes the noun’s gender and number: masculine frumos / frumoși, feminine frumoasă / frumoase. Neuter nouns use the masculine form in the singular and the feminine form in the plural: un creion frumos, două creioane frumoase.",
+     "examples": [
+      { "ro": "un câine frumos – doi câini frumoși", "en": "a beautiful dog – two beautiful dogs" },
+      { "ro": "un creion nou – două creioane noi", "en": "a new pencil – two new pencils" }
+     ],
+     "items": [
+      { "id": "ilr-02.g.adj.1", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "o floare ___ (frumos)", "answer": ["frumoasă"] },
+      { "id": "ilr-02.g.adj.2", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "un creion ___ (frumos)", "answer": ["frumos"] },
+      { "id": "ilr-02.g.adj.3", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "două creioane ___ (frumos)", "answer": ["frumoase"] },
+      { "id": "ilr-02.g.adj.4", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "doi câini ___ (frumos)", "answer": ["frumoși"] },
+      { "id": "ilr-02.g.adj.5", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "două fete ___ (frumos)", "answer": ["frumoase"] },
+      { "id": "ilr-02.g.adj.6", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "un caiet ___ (nou)", "answer": ["nou"] },
+      { "id": "ilr-02.g.adj.7", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "o mașină ___ (nou)", "answer": ["nouă"] },
+      { "id": "ilr-02.g.adj.8", "kind": "type", "instruction": "Put the adjective in the right form.", "prompt": "două dulapuri ___ (mare)", "answer": ["mari"] },
+      { "id": "ilr-02.g.adj.9", "kind": "order", "instruction": "Build the sentence.", "prompt": "I have a beautiful cat.", "answer": ["Am o pisică frumoasă."] },
+      { "id": "ilr-02.g.adj.10", "kind": "order", "instruction": "Build the sentence.", "prompt": "We have two new notebooks.", "answer": ["Avem două caiete noi."] }
+     ]
+    },
+    {
+     "id": "ilr-02.g.people",
+     "title": "Plural of people",
+     "rule": "For people, masculine plurals usually end in -i (studenți, colegi, băieți) and feminine plurals in -e (studente, colege, profesoare). A few feminine words take -i instead: soră → surori, bunică → bunici, femeie → femei.",
+     "examples": [
+      { "ro": "un coleg – doi colegi", "en": "one colleague – two colleagues (m)" },
+      { "ro": "o colegă – două colege", "en": "one colleague – two colleagues (f)" }
+     ],
+     "items": [
+      { "id": "ilr-02.g.people.1", "kind": "type", "instruction": "Make it plural.", "prompt": "coleg", "answer": ["colegi"] },
+      { "id": "ilr-02.g.people.2", "kind": "type", "instruction": "Make it plural.", "prompt": "colegă", "answer": ["colege"] },
+      { "id": "ilr-02.g.people.3", "kind": "type", "instruction": "Make it plural.", "prompt": "student", "answer": ["studenți"] },
+      { "id": "ilr-02.g.people.4", "kind": "type", "instruction": "Make it plural.", "prompt": "studentă", "answer": ["studente"] },
+      { "id": "ilr-02.g.people.5", "kind": "type", "instruction": "Make it plural.", "prompt": "băiat", "answer": ["băieți"] },
+      { "id": "ilr-02.g.people.6", "kind": "type", "instruction": "Make it plural.", "prompt": "bărbat", "answer": ["bărbați"] },
+      { "id": "ilr-02.g.people.7", "kind": "type", "instruction": "Make it plural.", "prompt": "femeie", "answer": ["femei"] },
+      { "id": "ilr-02.g.people.8", "kind": "type", "instruction": "Make it plural.", "prompt": "profesoară", "answer": ["profesoare"] }
+     ]
+    }
+   ]
   }
  ]
 }
