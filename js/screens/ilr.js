@@ -1,6 +1,6 @@
 import { h, answerInput, diacriticsBar } from '../ui.js';
 import { state, lessonById, lessonCards, addCustomCard, deleteCard } from '../store.js';
-import { isLearned, cellMastered } from '../progress.js';
+import { isLearned, cellMastered, personsFor } from '../progress.js';
 import { speak, hasVoice } from '../tts.js';
 import { toast } from '../fx.js';
 import { renderPractice } from './practice.js';
@@ -29,24 +29,44 @@ function scopeCards(scope) {
   return [...byId.values()];
 }
 
+const LESSON_TENSE = 'prezent'; // the tense the lessons so far practise in verb mode
+
+const scopeVerbs = scope => [...new Set(scope.lessons.flatMap(l => l.verbs || []))].map(v => state.verbs.get(v)).filter(Boolean);
+
+// Each word, grammar item and verb cell (present tense, per person) is either untouched,
+// practised (answered correctly at least once) or done (correct on two different days).
 function stats(scope) {
   const cards = scopeCards(scope);
-  const items = scope.lessons.flatMap(l => (l.grammar || []).flatMap(g => g.items));
+  const items = scope.lessons.flatMap(l => (l.grammar || []).flatMap(g => g.items)).map(it => state.mastery.get(grammarKey(it)));
+  const verbs = scopeVerbs(scope);
+  const cells = verbs.flatMap(v => personsFor(LESSON_TENSE).map(p => state.mastery.get(`${v.id}|${LESSON_TENSE}|${p}`)));
+  const practised = cell => (cell?.count || 0) > 0;
+  const tally = (list, done, started) => ({ total: list.length, done: list.filter(done).length, started: list.filter(x => started(x) && !done(x)).length });
   return {
-    words: cards.length,
-    learned: cards.filter(isLearned).length,
-    items: items.length,
-    mastered: items.filter(it => cellMastered(state.mastery.get(grammarKey(it)))).length,
+    words: tally(cards, isLearned, c => c.correctDays?.length > 0),
+    items: tally(items, cellMastered, practised),
+    cells: tally(cells, cellMastered, practised),
+    verbs: { total: verbs.length, done: verbs.filter(v => personsFor(LESSON_TENSE).every(p => cellMastered(state.mastery.get(`${v.id}|${LESSON_TENSE}|${p}`)))).length },
   };
 }
 
-function progressBlock(scope) {
-  const s = stats(scope);
-  const total = s.words + s.items;
-  const frac = total ? (s.learned + s.mastered) / total : 0;
+function progressBlock(scope, { explain = false } = {}) {
+  const { words, items, cells, verbs } = stats(scope);
+  const total = words.total + items.total + cells.total;
+  const pct = n => `${total ? (n / total) * 100 : 0}%`;
+  const done = words.done + items.done + cells.done;
+  const started = words.started + items.started + cells.started;
+  const parts = [`${words.done}/${words.total} words learned`];
+  if (items.total) parts.push(`${items.done}/${items.total} grammar mastered`);
+  if (verbs.total) parts.push(`${verbs.done}/${verbs.total} verbs (prezent)`);
   return h('div', { class: 'lesson-progress' },
-    h('div', { class: 'level-bar' }, h('div', { class: 'level-fill', style: { width: `${Math.round(frac * 100)}%` } })),
-    h('div', { class: 'muted small' }, `${s.learned}/${s.words} words learned`, s.items ? ` · ${s.mastered}/${s.items} grammar mastered` : ''));
+    h('div', { class: 'level-bar two-tone', title: `${done} done, ${started} practised` },
+      h('div', { class: 'level-fill', style: { width: pct(done) } }),
+      h('div', { class: 'level-fill started', style: { width: pct(started) } })),
+    h('div', { class: 'muted small' }, parts.join(' · ')),
+    explain && started ? h('div', { class: 'muted small' },
+      `In progress: ${[words.started && `${words.started} words`, items.started && `${items.started} grammar items`, cells.started && `${cells.started} verb forms`].filter(Boolean).join(', ')}. `,
+      'They count as learned once you get them right on two different days.') : null);
 }
 
 // ================= lesson list =================
@@ -84,16 +104,16 @@ export function renderIlrScope(root, id) {
   const scope = resolveScope(id);
   if (!scope || !scope.lessons.length) { location.hash = '#/ilr'; return; }
   const s = stats(scope);
-  const verbIds = [...new Set(scope.lessons.flatMap(l => l.verbs || []))].filter(v => state.verbs.has(v));
+  const verbIds = scopeVerbs(scope).map(v => v.id);
 
   root.append(h('section', { class: 'screen ilr-lesson' },
     h('div', { class: 'card' },
       h('h1', {}, scope.title),
       scope.lesson ? h('p', { class: 'muted' }, scope.lesson.topic) : h('p', { class: 'muted' }, scope.lessons.map(lessonName).join(', ')),
-      progressBlock(scope)),
+      progressBlock(scope, { explain: true })),
     h('div', { class: 'stack' },
-      h('a', { class: 'btn primary big', href: `#/ilr/${id}/practice` }, `📚 Practice words (${s.words})`),
-      s.items ? h('a', { class: 'btn secondary big', href: `#/ilr/${id}/grammar` }, `🧠 Grammar drills (${s.items})`) : null,
+      h('a', { class: 'btn primary big', href: `#/ilr/${id}/practice` }, `📚 Practice words (${s.words.total})`),
+      s.items.total ? h('a', { class: 'btn secondary big', href: `#/ilr/${id}/grammar` }, `🧠 Grammar drills (${s.items.total})`) : null,
       scope.lesson ? h('a', { class: 'btn plain big', href: `#/ilr/${id}/sheet` }, '📄 Lesson sheet') : null),
     verbIds.length ? h('div', { class: 'card' },
       h('h2', {}, 'Verbs'),

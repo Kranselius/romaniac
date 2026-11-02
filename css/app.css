@@ -385,6 +385,9 @@ summary { font-weight: 900; cursor: pointer; padding: 4px 0; }
 .lesson-title { font-weight: 900; font-size: 1.05rem; }
 .lesson-progress { margin-top: 6px; }
 .lesson-progress .level-bar { height: 8px; margin: 4px 0; }
+.level-bar.two-tone { display: flex; }
+.level-bar.two-tone .level-fill { border-radius: 0; }
+.level-fill.started { background: #a9bdf0; }
 .ilr-lesson h1 { margin-bottom: 4px; }
 .verb-chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .verb-chips .chip { text-decoration: none; display: inline-flex; align-items: center; }
